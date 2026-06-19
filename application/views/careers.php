@@ -1,0 +1,219 @@
+<head>
+    <link rel="icon" href="images/logo.png" type="images/logo.png" sizes="32x32">
+<style>
+label {
+    padding: 8px;
+    background: #043d5b;
+    display: table;
+    color: #fff;
+    width: 100%;
+    border-radius: 23px;
+    text-align: center;
+    cursor:pointer;
+}
+.submit{border-radius: 23px;}
+
+input[type="file"] {
+    display: none;
+}
+.mysubmit {
+    border-radius: 18px;
+    padding: 6px 63px;
+    font-weight: bold;
+    background: #043d5b;
+    border: none;
+    box-shadow: 0px -4px 2px #1c3b4c;
+    color: white;
+    margin-left: 19px;
+}
+.section-content{text-align: center;
+    padding: 23px;
+}
+.career-header{}
+.contact{}
+.carrerfield{
+    border-radius:23px !important;
+}
+</style>
+</head>
+<!-- Mirrored from eyecix.com/html/careplus/team-list.html by --->
+<?php $this->load->view("includes/header.php"); ?>
+<div class="container" style="margin-top:63px;">
+	<div class="careplus-main-section careplus-blog-modern-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+					<div class="careplus-fancy-title">
+						<h2>Career</h2>
+						<span><small></small><i class="fas fa-link"></i></span>
+					</div>
+                    <!--contact page-->
+					<section id="contact">
+						<div class="contact-section">
+							<div class="container">
+								<form action="<?=base_url()?>Home/career" method="post" enctype="multipart/form-data">
+									
+									<div class="row">
+										<div class="col-md-12" style="background: white;padding:23px;border-radius: 0px 29px;">
+											<h3 style="color: #295771;font-weight:bold;">BECOME AN Employee</h3>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<?php  echo $this->session->flashdata('flashmsg');?>
+												</div>
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<input type="text" class="form-control carrerfield" name="name" id="" value="<?php echo set_value('name'); ?>" placeholder=" Enter Name">
+													<span style="color:red;"><?php echo form_error('name');?></span>
+												</div>
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<input type="email" class="form-control carrerfield" name="email" value="<?php echo set_value('email'); ?>" id="exampleInputEmail" placeholder=" Enter Email id">
+													<span style="color:red;"><?php echo form_error('email');?></span>
+												</div>	
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<input type="tel" class="form-control carrerfield" id="telephone" name="mobile" value="<?php echo set_value('mobile'); ?>" placeholder=" Enter 10-digit mobile no.">
+													<span style="color:red;"><?php echo form_error('mobile');?></span>
+												</div>
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">												
+													<select class="form-control carrerfield" name="designation" >
+														<option value="">Select Designation</option>
+														<option <?php if(set_value('designation')=="Marketing"){ echo "selected"; } ?> value="Marketing">Marketing</option>
+														<option <?php if(set_value('designation')=="Office Work"){ echo "selected"; } ?> value="Office Work">Office Work</option>
+														<option <?php if(set_value('designation')=="Accountent"){ echo "selected"; } ?> value="Accountent">Accountent</option>
+														<option <?php if(set_value('designation')=="Call Center"){ echo "selected"; } ?> value="Call Center">Call Center</option>
+													</select>
+													<span style="color:red;"><?php echo form_error('designation');?></span>
+												</div>	
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<input type="text" class="form-control carrerfield" id="qualification" name="qualification" value="<?php echo set_value('qualification'); ?>" placeholder=" Enter Your Maximum Qualification">
+													<span style="color:red;"><?php echo form_error('qualification');?></span>
+												</div>
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<textarea name="message" class="form-control carrerfield" placeholder="Enter Your Message" ><?php echo set_value('message'); ?></textarea>
+													<span style="color:red;"><?php echo form_error('message');?></span>
+												</div>
+											</div>
+											<div class="col-md-12 form-line">
+												<div class="form-group">
+													<label id="#bb"> Enter Your File
+														<input type="file" id="File"  name="uploadimage" class="form-control carrerfield"  size="60" >
+													</label> 
+													<span style="color:red;"><?php echo form_error('uploadimage');?></span>
+												</div>
+											</div>
+											<div class="col-md-12 form-line" align="center">
+												<input type="submit" name="submit" class="mysubmit" value="Submit">
+											</div>
+											<!--<button type="button" class="mysubmit">Submit </button>-->
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+					<!--close page coding-->
+				</div>
+			</div>
+		</div>
+	</div>     
+</div>     
+<?php $this->load->view('includes/footer.php'); ?>
+<script>
+	$('#drforgotform').submit(function(e) {		
+	e.preventDefault(e);		
+	var myform=$(this);		
+	$.ajax({			
+		type: "POST",			
+		url: myform.attr('action'),			
+		data: myform.serialize(),			
+		success: function( response ) {				 
+			response = JSON.parse(response);				
+			if(response.status=='success'){
+			$('#drforgotform').hide();
+			$('#drforgototpform').show();
+			}else{					
+				alert('opps'+response.msg);				
+			}				
+			console.log( response );			
+		}		
+	});			
+});		
+	
+	
+$('#drforgototpform').submit(function(e) {		
+	e.preventDefault(e);		
+	var myform=$(this);		
+	$.ajax({			
+	type: "POST",			
+	url: myform.attr('action'),			
+	data: myform.serialize(),			
+	success: function( response ) {				
+		response = JSON.parse(response);				
+		if(response.status=='success'){										
+				$('#drforgototpform').hide();
+			$('#drforgotnewpassform').show();
+		}else if(response.status=='failed'){					
+			alert(response.msg);									
+		}else{
+			alert('opps'+response.msg);
+		}
+		console.log( response );			
+	}
+	});
+});		
+	
+$('#drforgotnewpassform').submit(function(e) {		
+	e.preventDefault(e);		
+	var myform=$(this);		
+	$.ajax({			
+	type: "POST",			
+	url: myform.attr('action'),			
+	data: myform.serialize(),			
+	success: function( response ) {				
+		response = JSON.parse(response);				
+		if(response.status=='success'){										
+			window.location="<?=base_url();?>doctor-login";
+		}else if(response.status=='failed'){					
+			alert(response.msg);									
+		}else{
+			alert('opps'+response.msg);
+		}
+		console.log( response );			
+	}
+	});
+});		
+$('.drresendfotp').click(function(e) {		
+	e.preventDefault(e);		
+	/* $('button[type=submit], input[type=submit]').prop('disabled',true); */		
+	//var myform=$(this);		
+	$.ajax({			
+	type: "POST",			
+	url: '<?=base_url();?>doctoruser/resendforgetotp',//myform.attr('action'),			
+	//data: myform.serialize(),			
+	success: function( response ) {				
+		response = JSON.parse(response);				
+		if(response.status=='success'){										
+			//window.location="<?=base_url();?>";
+			myalert(response.msg);
+			//window.location="<?=$this->session->userdata('last_page');?>";					
+		}else if(response.status=='failed'){					
+			myalert(response.msg);									
+		}else{
+			myalert('opps'+response.msg);
+		}
+		console.log( response );			
+	}
+	});
+});		
+
+</script>

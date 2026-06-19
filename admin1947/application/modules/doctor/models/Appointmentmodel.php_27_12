@@ -1,0 +1,620 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Appointmentmodel extends CI_Model
+{ 
+	public function get_appointment($limit='10',$offset='0',$param=array())
+	{		
+		$appointment_id 	= $this->db->escape_str($this->input->get_post('appointment_id',TRUE));
+		$hospital_email 	= $this->db->escape_str($this->input->get_post('hospital_email',TRUE));
+		$hospital_phone 	= $this->db->escape_str($this->input->get_post('hospital_phone',TRUE));
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$paient_name 		= $this->db->escape_str($this->input->get_post('paient_name',TRUE));
+		$paient_phone 		= $this->db->escape_str($this->input->get_post('paient_phone',TRUE));
+		$appointment_email 	= $this->db->escape_str($this->input->get_post('appointment_email',TRUE));
+		$payment_mode 		= $this->db->escape_str($this->input->get_post('payment_mode',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));	
+		$time_from 			= $this->db->escape_str($this->input->get_post('time_from',TRUE));
+		$time_to 			= $this->db->escape_str($this->input->get_post('time_to',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$city_name 			= $this->db->escape_str($this->input->get_post('city_name',TRUE));
+				
+	    if($appointment_id!='')
+		{
+			$this->db->where("appointment_id","$appointment_id");
+		}
+		if($hospital_email!='')
+		{
+			$this->db->where("email","$hospital_email");
+		}
+		if($hospital_phone!='')
+		{
+			$this->db->where("mobile","$hospital_phone");
+		}
+		if($hospital_name!='')
+		{
+			$this->db->where("(name LIKE '%".$hospital_name."%' )");
+		}
+		if($paient_name!='')
+		{
+			$this->db->where("(appointment_name LIKE '%".$paient_name."%' )");
+		}
+		if($paient_phone!='')
+		{
+			$this->db->where("(appointment_mobile LIKE '%".$paient_phone."%' )");
+		}
+		if($appointment_email!='')
+		{
+			$this->db->where("(appointment_email LIKE '%".$appointment_email."%' )");
+		}
+		if($payment_mode!='')
+		{
+			$this->db->where("payment_mode","$payment_mode");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment_date <=', $date_to);
+		}
+		if($time_from!='')
+		{	
+			$this->db->where('from_timing <=', $time_from);
+		}
+		if($time_to!='')
+		{	
+			$this->db->where('to_timing >=', $time_to);
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("(fname LIKE '%".$doctor_name."%' )");
+		}
+		if($city_name!='')
+		{
+			$this->db->where("hospital.city","$city_name");
+		}
+		$this->db->order_by('appointment_id','desc');
+		$this->db->limit($limit,$offset);
+		$this->db->select('SQL_CALC_FOUND_ROWS profile_dr.*,hospital.*,appointment.*',FALSE);
+		$this->db->join('profile_dr','profile_dr.id=appointment.doctor_id','left');
+		$this->db->join('hospital','hospital.uid=appointment.institute_id','left');
+		$result = $this->db->get_where('appointment', array('appointment_id'))->result();
+		return $result;
+	}
+	
+	public function get_appointment_list($param=array())
+	{		
+		$appointment_id 	= $this->db->escape_str($this->input->get_post('appointment_id',TRUE));
+		$hospital_email 	= $this->db->escape_str($this->input->get_post('hospital_email',TRUE));
+		$hospital_phone 	= $this->db->escape_str($this->input->get_post('hospital_phone',TRUE));
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$paient_name 		= $this->db->escape_str($this->input->get_post('paient_name',TRUE));
+		$paient_phone 		= $this->db->escape_str($this->input->get_post('paient_phone',TRUE));
+		$appointment_email 	= $this->db->escape_str($this->input->get_post('appointment_email',TRUE));
+		$payment_mode 		= $this->db->escape_str($this->input->get_post('payment_mode',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));	
+		$time_from 			= $this->db->escape_str($this->input->get_post('time_from',TRUE));
+		$time_to 			= $this->db->escape_str($this->input->get_post('time_to',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$city_name 			= $this->db->escape_str($this->input->get_post('city_name',TRUE));
+				
+	    if($appointment_id!='')
+		{
+			$this->db->where("appointment_id","$appointment_id");
+		}
+		if($hospital_email!='')
+		{
+			$this->db->where("email","$hospital_email");
+		}
+		if($hospital_phone!='')
+		{
+			$this->db->where("mobile","$hospital_phone");
+		}
+		if($hospital_name!='')
+		{
+			$this->db->where("(name LIKE '%".$hospital_name."%' )");
+		}
+		if($paient_name!='')
+		{
+			$this->db->where("(appointment_name LIKE '%".$paient_name."%' )");
+		}
+		if($paient_phone!='')
+		{
+			$this->db->where("(appointment_mobile LIKE '%".$paient_phone."%' )");
+		}
+		if($appointment_email!='')
+		{
+			$this->db->where("(appointment_email LIKE '%".$appointment_email."%' )");
+		}
+		if($payment_mode!='')
+		{
+			$this->db->where("payment_mode","$payment_mode");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment_date <=', $date_to);
+		}
+		if($time_from!='')
+		{	
+			$this->db->where('from_timing <=', $time_from);
+		}
+		if($time_to!='')
+		{	
+			$this->db->where('to_timing >=', $time_to);
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("(fname LIKE '%".$doctor_name."%' )");
+		}
+		if($city_name!='')
+		{
+			$this->db->where("hospital.city","$city_name");
+		}
+		$this->db->order_by('appointment_id','desc');
+		//$this->db->limit($limit,$offset);
+		$this->db->select('SQL_CALC_FOUND_ROWS profile_dr.*,hospital.*,appointment.*',FALSE);
+		$this->db->join('profile_dr','profile_dr.id=appointment.doctor_id');
+		$this->db->join('hospital','hospital.uid=appointment.institute_id');
+		$result = $this->db->get_where('appointment', array('appointment_id'))->result_array();
+		return $result;
+	}
+	
+	public function get_upcomming($limit='10',$offset='0',$param=array())
+	{		
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$paient_name 		= $this->db->escape_str($this->input->get_post('paient_name',TRUE));
+		$paient_phone 		= $this->db->escape_str($this->input->get_post('paient_phone',TRUE));
+		$appointment_id 	= $this->db->escape_str($this->input->get_post('appointment_id',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));	
+		
+		if($hospital_name!='')
+		{
+			$this->db->where("(name LIKE '%".$hospital_name."%' )");
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("(fname LIKE '%".$doctor_name."%' )");
+		}
+		if($paient_name!='')
+		{
+			$this->db->where("(appointment_name LIKE '%".$paient_name."%' )");
+		}
+		if($paient_phone!='')
+		{
+			$this->db->where("(appointment_mobile LIKE '%".$paient_phone."%' )");
+		}
+		if($appointment_id!='')
+		{
+			$this->db->where("appointment_id","$appointment_id");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment_date <=', $date_to);
+		}
+		$this->db->where("appointment.appointment_date>",date('Y-m-d'));
+		$this->db->order_by('appointment_id','desc');
+		$this->db->limit($limit,$offset);
+		$this->db->select('SQL_CALC_FOUND_ROWS appointment.*,hospital.*,profile_dr.*',FALSE);
+		$this->db->join('profile_dr','profile_dr.id=appointment.doctor_id','left');
+		$this->db->join('hospital','hospital.uid=appointment.institute_id','left');
+		$result = $this->db->get_where('appointment', array('appointment_id'))->result();
+		return $result;
+	}
+	
+	public function get_today($limit='10',$offset='0',$param=array())
+	{		
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$paient_name 		= $this->db->escape_str($this->input->get_post('paient_name',TRUE));
+		$paient_phone 		= $this->db->escape_str($this->input->get_post('paient_phone',TRUE));
+		$appointment_id 	= $this->db->escape_str($this->input->get_post('appointment_id',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));	
+		
+		if($hospital_name!='')
+		{
+			$this->db->where("(name LIKE '%".$hospital_name."%' )");
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("(fname LIKE '%".$doctor_name."%' )");
+		}
+		if($paient_name!='')
+		{
+			$this->db->where("(appointment_name LIKE '%".$paient_name."%' )");
+		}
+		if($paient_phone!='')
+		{
+			$this->db->where("(appointment_mobile LIKE '%".$paient_phone."%' )");
+		}
+		if($appointment_id!='')
+		{
+			$this->db->where("appointment_id","$appointment_id");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment_date <=', $date_to);
+		}
+		$this->db->where("appointment.appointment_date",date('Y-m-d'));
+		$this->db->order_by('appointment_id','desc');
+		$this->db->limit($limit,$offset);
+		$this->db->select('SQL_CALC_FOUND_ROWS appointment.*,hospital.*,profile_dr.*',FALSE);
+		$this->db->join('profile_dr','profile_dr.id=appointment.doctor_id','left');
+		$this->db->join('hospital','hospital.uid=appointment.institute_id','left');
+		$result = $this->db->get_where('appointment', array('appointment_id'))->result();
+		return $result;
+	}
+	
+	public function get_appointment_details($appointment_id)
+	{				
+	    if($appointment_id!='')
+		{
+			$this->db->where("appointment_id",$appointment_id);
+		}
+		$this->db->select('profile_dr.fname,profile_dr.email as dr_email,hospital.name,appointment.*');
+		$this->db->join('profile_dr','profile_dr.id=appointment.doctor_id');
+		$this->db->join('hospital','hospital.uid=appointment.institute_id');
+		$result = $this->db->get_where('appointment', array('appointment_id'))->row_array();
+		return $result;
+	}
+	
+	public function get_hospital()
+	{		
+		$hospital_email 	= $this->db->escape_str($this->input->get_post('hospital_email',TRUE));
+		$hospital_phone 	= $this->db->escape_str($this->input->get_post('hospital_phone',TRUE));
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$city_name 			= $this->db->escape_str($this->input->get_post('city_name',TRUE));
+				
+		if($hospital_email!='')
+		{
+			$this->db->where("email","$hospital_email");
+		}
+		if($hospital_phone!='')
+		{
+			$this->db->where("mobile","$hospital_phone");
+		}
+		if($hospital_name!='')
+		{
+			$this->db->where("(name LIKE '%".$hospital_name."%' )");
+		}
+		if($city_name!='')
+		{
+			$this->db->where("hospital.city","$city_name");
+		}
+		else
+		{
+		  $this->db->order_by('uid','asc');
+		}
+
+		$this->db->select('hospital.*');
+		$result = $this->db->get_where('hospital', array('uid'))->result();
+		return $result;
+	}
+
+	public function get_account()
+	{		 
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$payment_mode 		= $this->db->escape_str($this->input->get_post('payment_mode',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));
+		$session_from 		= $this->db->escape_str($this->input->get_post('session_from',TRUE));
+		$session_to 		= $this->db->escape_str($this->input->get_post('session_to',TRUE));
+				
+		if($hospital_name!='')
+		{
+			$this->db->where("(appointment.institute_id LIKE '%".$hospital_name."%' )");
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("appointment.doctor_id","$doctor_name");
+			//x$this->db->where("(appointment.institute_id LIKE '%".$hospital_name."%' )");
+		}
+		if($payment_mode!='')
+		{
+			$this->db->where("appointment.payment_mode","$payment_mode");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment.pay_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment.pay_date <=', $date_to);
+		}
+		if($session_from!='')
+		{	
+			$this->db->where('appointment.pay_date >=', $session_from);
+		}
+		if($session_to!='')
+		{	
+			$this->db->where('appointment.pay_date <=', $session_to);
+		}
+		else
+		{ 
+		  $this->db->order_by('appointment_id','asc');
+		}
+		$this->db->where("appointment.payment_status","DONE");
+		//$this->db->select('appointment.*');
+		$this->db->select('institute_id, COUNT(institute_id) as count ,SUM(amount) as total,payment_status,hospital.name as hospital_name,master_city.name as city_name');
+		$this->db->group_by("institute_id");
+		$this->db->join('hospital','hospital.id = appointment.institute_id');
+		$this->db->join('master_city','master_city.id = hospital.city','left');
+		$result = $this->db->get('appointment')->result();
+		return $result;
+	}
+
+	public function get_account_appointment()
+	{		 
+		$hospital_name 		= $this->db->escape_str($this->input->get_post('hospital_name',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$payment_mode 		= $this->db->escape_str($this->input->get_post('payment_mode',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));
+		$session_from 		= $this->db->escape_str($this->input->get_post('session_from',TRUE));
+		$session_to 		= $this->db->escape_str($this->input->get_post('session_to',TRUE));
+				
+		if($hospital_name!='')
+		{
+			$this->db->where("(appointment.institute_id LIKE '%".$hospital_name."%' )");
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("appointment.doctor_id","$doctor_name");
+			//x$this->db->where("(appointment.institute_id LIKE '%".$hospital_name."%' )");
+		}
+		if($payment_mode!='')
+		{
+			$this->db->where("appointment.payment_mode","$payment_mode");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment.pay_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment.pay_date <=', $date_to);
+		}
+		if($session_from!='')
+		{	
+			$this->db->where('appointment.pay_date >=', $session_from);
+		}
+		if($session_to!='')
+		{	
+			$this->db->where('appointment.pay_date <=', $session_to);
+		}
+		else
+		{ 
+		  $this->db->order_by('appointment_id','asc');
+		}
+		$this->db->where("appointment.payment_status","DONE");
+
+		$this->db->select('appointment.* ,hospital.name as hospital_name');
+		$this->db->join('hospital','hospital.id = appointment.institute_id');
+		$this->db->join('master_city','master_city.id = hospital.city','left');
+		$result = $this->db->get('appointment')->result();
+		return $result;
+	}
+	public function get_profile_dr()
+	{		
+		$doctor_email 	= $this->db->escape_str($this->input->get_post('doctor_email',TRUE));
+		$doctor_phone 	= $this->db->escape_str($this->input->get_post('doctor_phone',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$city_name 			= $this->db->escape_str($this->input->get_post('city_name',TRUE));
+				
+		if($doctor_email!='')
+		{
+			$this->db->where("email","$doctor_email");
+		}
+		if($doctor_phone!='')
+		{
+			$this->db->where("mobile","$doctor_phone");
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("(fname LIKE '%".$doctor_name."%' )");
+		}
+		if($city_name!='')
+		{
+			$this->db->where("city","$city_name");
+		}
+		else
+		{
+		  $this->db->order_by('user_id','asc');
+		}
+
+		$this->db->select('profile_dr.*');
+		$result = $this->db->get_where('profile_dr', array('uid'))->result();
+		return $result;
+	}
+
+	public function get_dr_hospital_id()
+	{	
+		$hospital_id 		=$this->uri->segment(4);	
+		$doctor_email 		= $this->db->escape_str($this->input->get_post('doctor_email',TRUE));
+		$doctor_phone 		= $this->db->escape_str($this->input->get_post('doctor_phone',TRUE));
+		$doctor_name 		= $this->db->escape_str($this->input->get_post('doctor_name',TRUE));
+		$city_name 			= $this->db->escape_str($this->input->get_post('city_name',TRUE));
+				
+		if($doctor_email!='')
+		{
+			$this->db->where("email","$doctor_email");
+		}
+		if($doctor_phone!='')
+		{
+			$this->db->where("mobile","$doctor_phone");
+		}
+		if($doctor_name!='')
+		{
+			$this->db->where("(fname LIKE '%".$doctor_name."%' )");
+		}
+		if($city_name!='')
+		{
+			$this->db->where("city","$city_name");
+		}
+		else
+		{
+		  $this->db->order_by('user_id','asc');
+		}
+
+   		$this->db->select('profile_dr.*,dr_practice.status as p_status');
+   		$this->db->join('profile_dr','profile_dr.id=dr_practice.user_id');
+   		$result = $this->db->get_where('dr_practice',array('institution_id'=>$hospital_id,'type'=>'H'))->result();
+		return $result;
+	}
+
+	public function get_appointment_by_droctor_id()
+	{		
+		$doctor_id 			= $this->uri->segment(4);
+		$paient_name 		= $this->db->escape_str($this->input->get_post('paient_name',TRUE));
+		$paient_phone 		= $this->db->escape_str($this->input->get_post('paient_phone',TRUE));
+		$appointment_email 	= $this->db->escape_str($this->input->get_post('appointment_email',TRUE));
+		$payment_mode 		= $this->db->escape_str($this->input->get_post('payment_mode',TRUE));
+		$date_from 			= $this->db->escape_str($this->input->get_post('date_from',TRUE));
+		$date_to 			= $this->db->escape_str($this->input->get_post('date_to',TRUE));	
+		$session_from 		= $this->db->escape_str($this->input->get_post('session_from',TRUE));
+		$session_to 		= $this->db->escape_str($this->input->get_post('session_to',TRUE));
+
+
+		if($paient_name!='')
+		{
+			$this->db->where("(appointment_name LIKE '%".$paient_name."%' )");
+		}
+		if($paient_phone!='')
+		{
+			$this->db->where("(appointment_mobile LIKE '%".$paient_phone."%' )");
+		}
+		if($appointment_email!='')
+		{
+			$this->db->where("(appointment_email LIKE '%".$appointment_email."%' )");
+		}		
+		if($payment_mode!='')
+		{
+			$this->db->where("payment_mode","$payment_mode");
+		}
+		if($date_from!='')
+		{
+			$this->db->where('appointment_date >=', $date_from);
+		}
+		if($date_to!='')
+		{
+			$this->db->where('appointment_date <=', $date_to);
+		}
+		if($session_from!='')
+		{	
+			$this->db->where('appointment_date >=', $session_from);
+		}
+		if($session_to!='')
+		{	
+			$this->db->where('appointment_date <=', $session_to);
+		}
+		if($doctor_id!='')
+		{
+			$this->db->where("doctor_id","$doctor_id");
+		}
+		else
+		{
+		  $this->db->order_by('appointment_id','asc');
+		}
+		$this->db->select('appointment.*');
+		$result = $this->db->get_where('appointment', array('appointment_id'))->result();
+		return $result;
+	}
+
+	public  function get_city($page=array())
+	{		
+		if( is_array($page) && !empty($page) )
+		{	
+			$this->db->select('id,name');
+			$result =  $this->db->get_where('master_city',$page)->result_array();
+
+			if( is_array($result) && !empty($result) )
+			{
+				return $result;
+			}
+		}
+	}
+	
+	public  function get_locality($page=array())
+	{		
+		if( is_array($page) && !empty($page) )
+		{	
+			$this->db->select('id,city_id,name');
+			$result =  $this->db->get_where('master_locality',$page)->result_array();
+
+			if( is_array($result) && !empty($result) )
+			{
+				return $result;
+			}
+		}
+	}
+
+	public  function hospital_list($page=array())
+	{
+		if( is_array($page) && !empty($page) )
+		{	
+			$this->db->select('id,name');
+			$result =  $this->db->get_where('hospital',$page)->result_array();
+
+			if( is_array($result) && !empty($result) )
+			{
+				return $result;
+			}
+		}
+	}
+
+	public  function doctor_list($page=array())
+	{
+		if( is_array($page) && !empty($page) )
+		{	
+			$this->db->select('profile_dr.id,profile_dr.fname');
+			$this->db->join('profile_dr','profile_dr.id=dr_practice.user_id');
+   			$result = $this->db->get_where('dr_practice',$page)->result_array();
+
+			if( is_array($result) && !empty($result) )
+			{
+				return $result;
+			}
+		}
+	}
+
+	function get_monthly_totals($theYear = '', $theMonth = '' , $payment_mode = '')
+	{	
+		$this->db->select("sum(amount) as TotalAmount", false);
+		$this->db->from('appointment');
+		if ($payment_mode != '') 
+		{	
+			$this->db->where("payment_mode",$payment_mode);
+		}
+		if ($theYear != '') 
+		{	
+			$this->db->where("EXTRACT(Year FROM pay_date) = '" . $theYear . "'", NULL, FALSE);
+		}
+		if ($theMonth != '')
+		{	
+			$this->db->where("EXTRACT(Month FROM pay_date) = '" . $theMonth . "'", NULL, FALSE);
+		}
+		$this->db->where("payment_status",'DONE');
+		
+    
+		$query = $this->db->get();
+
+		return $query->result_array();
+	}
+}

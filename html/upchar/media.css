@@ -1,0 +1,444 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #295771; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9bc03c; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+#upchar_logo {
+    height: 132px;
+    margin: 3px 11px 1px 56px;
+    transition:0.4s;
+}
+
+
+
+.NewButton{
+background:#ffffff;border-radius: 0px 12px;padding:5px 12px;font-weight:bold;color:#295771;text-shadow: 0px -3px 5px #464545;letter-spacing: 3px;    
+}
+
+.navbar-nav > li:hover {
+    box-shadow: 0px -4px 5px black;
+    transition:0.8s;
+}
+.videoCode {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    animation: float 3s linear 2s infinite alternate;
+    margin-top: 51px;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0px 5px 0px rgba(0,0,0,0.9);
+	
+		
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.5);
+	    
+		
+	}
+	100% {
+		box-shadow: 0 0px 15px 0px rgba(0,0,0,0.9);
+ 
+	}
+}
+
+
+ .center{
+            display: flex;
+        }
+
+.char {
+    font-size: 27px;
+    animation: an 4s ease-out 1 both;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+}
+
+        @keyframes an{
+            from{
+                opacity: 0;
+                transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+            }
+            to{
+                opacity: 1;
+                transform: perspective(500px) translate3d(0, 0, 0);
+            }
+        }
+
+.slogan {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 0px -3px #7d7676;
+}
+.colorwhite{
+    color:white;
+}
+.spacingText {
+    padding-top: 72px;
+}
+.fontSignUp {
+    background: #94b63c;
+    color: #ffffff;
+    padding: 5px 28px;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 29px;
+    transition:0.4s;
+}
+.fontSignUp:hover{
+    background:#f30000;
+    color:white;
+}
+.ulList{color:white;}
+
+.ulList li {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 10px;
+    transition:0.4s;
+    font-family: "Times New Roman", Times, serif;   
+}
+.rightIcon { 
+    margin-right: 11px;   
+}
+
+.ulList li:hover{
+   
+}
+
+header {
+    background-image: linear-gradient(#08364b, #2777a0, #08364b);
+}
+#searchBTN {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color:#9bc03c;
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+}
+#heart{
+    height:73px;
+}
+
+.bannertext {
+    text-align: center;
+    position: relative;
+    float: right;
+    margin:-166px 60px 0px 0px;
+    height: 121px;
+}
+.dropdown-content a:hover {
+    font-weight: bold;
+    transform: scale(1.2, 1.2);
+    transition:0.6s;
+}
+.carousel-indicators {
+    bottom: -27px;
+}
+.bannerbox {
+    text-align: center;
+    position: relative;
+    float: right;
+    margin:-58px 19px 0px 0px;
+}
+
+
+.popboxdesign{
+     float: left;
+    width: 100%;
+    height: 87px!important;
+}
+.topmenupartner {
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.7s;
+    background: #9bc03c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin: -3px;
+    padding: 14px 15px;
+    color: white;
+}
+#showboxmargin{background:white;padding:20px 12px;}
+/*------------------------media quary start----------------------------*/
+
+
+@media screen and (max-width: 1024) {
+    .char {
+    font-size: 16px;}
+}
+ 
+ 
+@media screen and (max-width: 768px) {
+ 
+ 
+.mobileIcon {
+    height: 45px;
+    float: right;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    right: 8px;
+    color: white;
+    background: white;
+    border-radius: 8px;
+    box-shadow:0px -4px 6px #06060678;
+}
+.imghove {
+    position: relative;
+    width: 105%;
+    transition: 0.4s;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.navbar {
+    width: 239px;
+    z-index: 9;
+    float: right;
+    position: absolute;
+    right: 0px;
+    margin-top: 54px;
+    display: none;
+    text-align: center;
+}
+ .topmenu {
+    padding: 14px 15px!important;
+    width: 263px;
+    margin: 3px;
+    box-shadow: 0px -2px 10px 0px black;
+}
+
+#upchar_logo {
+    height: 122px;
+    margin: 13px 8px 10px 0px;
+}
+.careplus-blog > ul > li {
+    list-style: none;
+    height: 314px;
+    margin-bottom: 26px;
+}
+
+
+#mobileGallery{  margin-top: 1081px;}
+.mobileGallery2{width: 100%;}
+.image {
+    display: block;
+    height: 315px;
+    transition: 0.5s;
+}
+
+/*--popup---*/
+#showBox {
+    height: 684px;
+}
+#tabpopup{
+     margin: 0px 1px;
+}
+#showBox {
+    height: 1080px;
+    width: 51%;
+    margin: 3px 65px;
+    background:white;
+}
+
+/*--popup close---*/
+#mobilefooter{z-index:345;position:relative;}
+
+    
+.bannertext {
+    margin:-184px 29px 0px 0px;
+}
+.bannerbox {
+    margin: -66px -1px 0px 0px;
+}
+.popboxdesign {
+    height: 172px!important;
+}
+    
+    
+}
+
+@media screen and (max-width: 614px) {
+
+#tabpopup {
+    width: 98%;
+    margin-bottom: 40px;
+}
+#showBox {
+    left: auto;
+    height: 1427px;
+    width: 448px;
+    background: white;
+}
+
+
+.sitename {
+    font-family: verdana;
+    color:white;
+    text-shadow: 0px 0px 0px #245a73;
+    font-size: 21px;
+    margin-top: 28px;
+}
+.slogan {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 0px -3px #7d7676;
+    margin-top: 7px;
+}
+.image {
+    width: 100%;
+    height: 267px;
+}
+#showBox {
+    left: -55px;
+    height: 1215px;
+    margin-top: 9px;
+}
+.bannertext {display:none;}
+.bannerbox {display:none;}
+
+.popboxdesign {
+    float: left;
+    width: 100%;
+    height: 205px!important;
+}
+.careplus-footer-widget .widget {
+    margin-bottom: 118px;
+}
+.careplus-team-mediumfull {
+    padding: 0px 0px 0px;
+}
+.careplus-copyright {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 23px 0px 21px;
+    z-index: 1;
+    margin-top: 30px;    
+}
+
+.topmenupartner {
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.7s;
+    background: #9bc03c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    padding: 14px 15px;
+    color: white;
+    width: 263px;
+    box-shadow: 0px -3px 12px black;
+    margin-right: -9px;
+}
+
+
+}
+
+@media screen and (max-width: 414px){
+#showBox {
+    left: -60px;
+    height: 1212px;
+    width: 97.2%;
+    background: white;
+}
+.videoCode {
+    width: 100%;
+
+}
+.careplus-team-mediumfull {
+
+    margin: 3px 0px 70px;
+}
+.careplus-fancy-title {
+
+    margin: 0px 0px 10px;
+}
+.careplus-blog > ul > li {
+  
+    margin: 0px;
+}
+#mobileGallery {
+    margin-top: 955px;
+}
+.mobileGallery2 {
+    width: 100%;
+    margin: 0px;
+    margin-top: 30px;
+}
+#tabSpecialists {
+    width: 378px;
+}    
+
+#searchBTN {
+    margin-bottom: 9px;
+}
+.mobileIcon {
+    margin: 7px;
+}
+
+}
+
+
+
+@media screen and (max-width: 375px){
+    
+#upchar_logo {
+    height: 13%;
+    margin: 29px 10px;
+}
+.slogan {
+    letter-spacing: 2px;
+}
+
+#tabSpecialists {
+    width: 354px;
+}
+.mobileIcon {
+    margin: 11px;
+    margin-top: 9px;
+}
+
+}
+
+
+@media screen and (max-width: 360px){
+.sitename {
+ 
+    font-size: 33px;
+    margin-top: 28px;
+    letter-spacing: 4px;
+}
+.slogan {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+}

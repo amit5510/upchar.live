@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>||  Welcome to upcharr ||</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style_home.css">
+  <style type="text/css">
+     .login
+ {
+    margin-left: 54px;
+    border: 1px solid #fff;
+    padding: 11px 30px;
+    margin-top: 9px;
+    float: right;
+    color: #fff;
+}
+.login a
+{color: #fff;}
+.login:hover
+{background: #9bc03c;
+color: #fff;}
+.navbar-nav > li { padding: 0px 26px 0px 12px!important; }
+.careplus-user-list li {
+  
+    margin: 15px 0px 0px -11px!important;
+ 
+}
+
+
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+<div class="row">
+                        <aside class="col-md-3 logocont"><a href="<?=base_url();?>" class="careplus-logo"><img id="upchar_logo" src="<?=base_url();?>images/Final_logo23.png" alt=""></a></aside>
+
+                        <aside class="col-md-9" id="HeadMobile">
+                                  <h2 class="sitename"><b>UPCHAR</b></h2>
+                                  <h6 class="slogan">one place of your healthcare</h6>
+                                  
+
+
+<nav class="navbar">
+    <ul class="nav navbar-nav navbar-right">
+         <li>
+          <a href="<?=base_url();?>"><span class="glyphicon glyphicon-home iconEffect"></span> Home</a>
+      </li>
+      <li class="showPartners" data-target="#madicine">
+         <a href="<?=base_url();?>"><span class="glyphicon glyphicon-thumbs-up iconEffect"></span> Upchar Partner</a>
+      </li>
+     
+     
+        <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="<?=base_url();?>">
+            <i class="fas fa-handshake iconEffect"></i> Partner Login <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background: none;">
+             <li> <a href="<?=base_url();?>doctor-aindex">Doctor</a></li>
+          <li> <a href="<?=base_url();?>hospital-aindex">Hospital</a></li>
+          <li> <a href="<?=base_url();?>pathlab-login">Pathology</a></li>
+          <!--
+          <li> <a href="<?=base_url();?>pathdoctor-login">Pathdoctor</a></li>
+          <li>  <a href="<?=base_url();?>medical-login">Chemist</a></li>-->
+         
+        </ul>
+      </li>
+    
+       <li>
+          <a href="https://upcharrnews.blogspot.com/" target="_blank"><i class="fas fa-newspaper iconEffect"></i> Blog</a>
+      </li>
+      <!--
+      <li>
+          <a href="<?=base_url('signup');?>"> <span class="glyphicon glyphicon-user iconEffect"></span> Sign Up</a>
+      </li>
+      -->
+      <li>
+      <a href="<?=base_url('login');?>"><span class="glyphicon glyphicon-log-in iconEffect"></span> Login / <span class="glyphicon glyphicon-user iconEffect"></span> Sign Up </a>
+       </li>
+      	
+      	
+    </ul>
+
+</nav>
+        </aside>
+
+
+<img class="mobileIcon" src="images/menu_icon.png" />
+
+
+                    
+                    </div>
+
+</div>
+
+
+
+<form action="https://www.upcharr.com/search" method="GET">
+                <div class="box-form">
+                      
+      
+                    <div class="col-sm-2 col-sm-offset-1">
+                        <div class="input-group shadow">
+                            <span class="input-group-addon"> <i class="fa fa-map-marker"> &nbsp; &nbsp; </i></span>
+                            <input type="text" class="form-control ui-autocomplete-input" name="location" placeholder="Location" id="hintcity" autocomplete="off">
+                            <input type="hidden" class="form-control" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="input-group shadow">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" id="hint" class="form-control ui-autocomplete-input" name="keyword" placeholder="Search Hospitals/Doctors/Clinics etc" autocomplete="off">
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group shadow">
+                            <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                            <select class="form-control" name="spl">
+              <option value="">-Specialization-</option>
+                                              <option value="17">Anesthesiology</option>
+                                              <option value="23">Ayurveda </option>
+                                              <option value="6">cardiologist</option>
+                                              <option value="1">Dentist</option>
+                                              <option value="13">Dermatology</option>
+                                              <option value="21">Emergency Medicine</option>
+                                              <option value="10">ENT </option>
+                                              <option value="22">General Medicine</option>
+                                              <option value="5">neuro</option>
+                                              <option value="14">Neurology</option>
+                                              <option value="8">Neurosurgery</option>
+                                              <option value="12">Obstetrics &amp; Gynecology (Ob/Gyn)</option>
+                                              <option value="11">Ophthalmology</option>
+                                              <option value="2">Orthopedic</option>
+                                              <option value="15">Pathology</option>
+                                              <option value="19">Pediatrics</option>
+                                              <option value="7">physytion</option>
+                                              <option value="18">Psychiatry</option>
+                                              <option value="20">Radiation Oncology</option>
+                                              <option value="16">Radiology</option>
+                                              <option value="9">Urology </option>
+                                               
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-1"><button class="careplus-booking-btn careplus-bgcolor-two" style=" margin-top: 0px; line-height: 40px;box-shadow: 3px 3px 0px #08364b9e;padding: 6.3px;margin-left: -27px;width:43px;border-radius: 2px 12px 12px 0px; background: white;"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+
+
+
+
+                    <div class="clearfix"></div>
+                </div>
+                </form>
+
+ <div class="clearfix"></div>
+
+
+<div id="showBox">
+  
+        <div class="col-md-12" id="showboxmargin">
+                            <div class="careplus-fancy-title" id="boxdiv">
+                                <button style="background: #043d5b;color:white;padding: 11px 13px;opacity: 1;" class="close">x</button>
+                                <h2 style="color:black;">Our Partner's</h2>
+                                <span><small></small><i class="fas fa-link"></i></span>
+                            </div>
+                            <div class="careplus-blog careplus-blog-modern">
+                                <ul class="row">
+
+                              
+
+
+                                       <li class="col-md-3" id="tabpopup">
+                                          
+                                        <figure class="popboxdesign"><a href='<?=base_url();?>hospitals'><img class="popboxdesign" src="images/Hospital.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                            <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                        <div class="careplus-blog-modern-text text-center">
+                                            <h6><a href='<?=base_url();?>hospitals'>Hospital</a></h6>
+                                        </div> 
+                                        
+                                    </li>
+
+
+                                    <li class="col-md-3" id="tabpopup">
+                                       
+                                        <figure class="popboxdesign"><a href="#"><img class="popboxdesign" src="images/blog-modern-img3.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                            <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                        <div class="careplus-blog-modern-text text-center">
+                                            <h6><a href="#">Pathology</a></h6>
+                                       </div>
+                                    </li>
+                                    <li class="col-md-3" id="tabpopup">
+                                      
+                                        <figure class="popboxdesign"><a href="#"><img class="popboxdesign" src="images/3d-printed-pharmaceuticals-header_kss.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                           <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                        <div class="careplus-blog-modern-text text-center">
+                                            <h6><a href="#" data-toggle="modal" data-target="#madicine">Medicine</a></h6>
+                                    
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3" id="tabpopup">
+                                    
+                           <figure class="popboxdesign"> <a href='<?=base_url();?>doctors'><img class="popboxdesign" class="popboxdesign" src="images/blog-modern-img2.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                       -->   <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                          <div class="careplus-blog-modern-text text-center">
+                                            <h6><a href='<?=base_url();?>doctors'>Doctor</a></h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+ 
+</div>
+
+<div class="careplus-banner-one slick-initialized slick-slider">
+                <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 2698px;"><div class="careplus-banner-one-layer slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 1349px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                    <img src="images/banner-1.jpg" alt="">
+                    <span class="careplus-transparent"></span>
+                    <div class="careplus-banner-caption">
+                        <span class="careplus-transparent-shape"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="careplus-banner-wrap">
+                                        <h1><span>You Can’t</span>    Always Be There<span>But We Will there</span></h1>
+                                        <p>Any one can book online appointment for doctor Via UPCHAR APP Or Call On 8448440603 .</p>
+                                        <div class="clearfix"></div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="careplus-banner-one-layer slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 1349px; position: relative; left: -1349px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
+                    <img src="images/banner-2.jpg" alt="">
+                    <span class="careplus-transparent"></span>
+                    <div class="careplus-banner-caption">
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="careplus-banner-wrap">
+                                     <h1><span>You Can’t</span>   Always Be There<span>But We Will there</span></h1>
+                                        <p>Any one can book online appointment for doctor Via UPCHAR APP Or Call On 8448440603 .</p>
+                                        <div class="clearfix"></div>
+                                        <a href="404.html" class="careplus-banner-btn" tabindex="-1">Read More <span></span></a>
+                                    </div>
+                                    <div class="careplus-appointment-form">
+                                        <form>
+                                            <label>Book Appointment</label>
+                                            <p>Any one can book online appointment for doctor Via UPCHAR APP Or Call On 8448440603 .</p>
+                                            <ul>
+                                                <li>
+                                                    <input type="text" value="Full Name" onblur="if(this.value == '') { this.value ='Full Name'; }" onfocus="if(this.value =='Full Name') { this.value = ''; }" tabindex="-1">
+                                                    <i class="fa fa-user"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" value="Phone" onblur="if(this.value == '') { this.value ='Phone'; }" onfocus="if(this.value =='Phone') { this.value = ''; }" tabindex="-1">
+                                                    <i class="fa fa-phone"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" value="mm / dd / yyyy" onblur="if(this.value == '') { this.value ='mm / dd / yyyy'; }" onfocus="if(this.value =='mm / dd / yyyy') { this.value = ''; }" tabindex="-1">
+                                                    <i class="fa fa-calendar"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="careplus-select">
+                                                        <select tabindex="-1">
+                                                            <option value="">Choose Department</option>
+                                                            <option value="pakistan"> Department</option>
+                                                            <option value="india"> Department</option>
+                                                            <option value="usa"> Department</option>
+                                                            <option value="student"> Department</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="submit" value="Submit Now" tabindex="-1">
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div></div></div>
+                
+            </div>
+
+
+<div class="container">
+  <div class="row">
+    
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+  
+
+
+
+
+<div class="careplus-main-section careplus-team-mediumfull">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="careplus-fancy-title">
+                                <h2>Our Specialists</h2>
+                                <span><small></small><i class="fas fa-link"></i></span>
+                            </div>
+                    
+
+
+
+
+
+<div class="container">
+<div class="col-xs-12">
+
+        
+    <div class="carousel slide" id="myCarousel">
+           <div class="carousel-inner careplus-team careplus-team-medium">
+            <div class="item active">
+                    <ul class="thumbnails row">
+        <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img1.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Alexa Cermak</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Alex Cermak</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                    <img src="images/img1.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+
+
+  <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img2.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Frank Roony</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Frank Roony</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                    <img src="images/img2.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+                                     <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img3.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Edwin Spindrift</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Edwin Spindrift</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                    <img src="images/img3.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+                                     <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img4.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Leslie Gross</a></h5>
+                                                    <span>Surgery Specialist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Leslie Gross</a></h5>
+                                                    <span>Surgery Specialist</span>
+                                                    <img src="images/img4.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                  <ul class="thumbnails row">
+        <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img1.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Alexa Cermak</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Alex Cermak</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                    <img src="images/img1.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+
+
+
+   <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img2.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Frank Roony</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Frank Roony</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                    <img src="images/img2.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+
+                                     <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img3.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Edwin Spindrift</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Edwin Spindrift</a></h5>
+                                                    <span>Dental Hygienist</span>
+                                                    <img src="images/img3.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+                                     <li class="col-md-3">
+                                        <figure><a href=""><img src="images/img4.jpg" alt=""></a>
+                                            <figcaption>
+                                                <div class="careplus-team-medium-info">
+                                                    <h5><a href="team-detail.php">Dr. Leslie Gross</a></h5>
+                                                    <span>Surgery Specialist</span>
+                                                </div>
+                                                <div class="careplus-team-medium-text">
+                                                    <h5><a href="team-detail.php">Dr. Leslie Gross</a></h5>
+                                                    <span>Surgery Specialist</span>
+                                                    <img src="images/img4.jpg" style="height: 184px;padding-top: 10px;">
+                                                    <p>Lorem ipsum dolor sit ameta ectetur adipiscing elit. Sed ementum nulla, eu pla</p>
+                                                   
+                                                    <a href="404.php" class="careplus-readmore-btn">read more <span></span></a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+
+                                    
+                    </ul>
+              </div><!-- /Slide2 --> 
+           <!-- /Slide3 --> 
+        </div>
+        
+       
+     <nav>
+      <ul class="control-box pager">
+        <li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+        <li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+      </ul>
+    </nav>
+     <!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+        
+</div><!-- /.col-xs-12 -->          
+
+</div><!-- /.container -->
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+  <div class="careplus-main-section careplus-blog-modern-full">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <div class="careplus-fancy-title">
+                                <h2>Our Partner's</h2>
+                                <span><small></small><i class="fas fa-link"></i></span>
+                            </div>
+                            <div class="careplus-blog careplus-blog-modern">
+                                <ul class="row">
+
+                              
+
+
+                                        <li class="col-md-3">
+                                        <figure ><a href="blog-detail.php"><img src="images/blog-modern-img2.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                            <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                        <div class="careplus-blog-modern-text text-center">
+                                            <h5><a href="blog-detail.php ">Hospital</a></h5>
+                                        </div> 
+                                    </li>
+
+
+                                    <li class="col-md-3">
+                                        <figure ><a href="blog-detail.php"><img src="images/blog-modern-img2.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                            <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                        <div class="careplus-blog-modern-text text-center">
+                                            <h5><a href="blog-detail.php">Pathology</a></h5>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                      
+                                        <figure><a href="blog-detail.php"><img src="images/blog-modern-img3.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                           <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                        <div class="careplus-blog-modern-text text-center">
+                                            <h5><a href="blog-detail.php">Madican</a></h5>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-3">
+                                    
+                                        <figure><a href="blog-detail.php"><img src="images/blog-modern-img3.jpg" alt=""><span><i class="fa fa-link"></i><small></small></span></a>
+                                          <!--    <time datetime="2008-02-14 20:00">21 AUG</time>-->
+                                        </figure>
+                                          <div class="careplus-blog-modern-text text-center">
+                                            <h5><a href="blog-detail.php">Doctor</a></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="careplus-main-section careplus-team-mediumfull">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                           
+
+
+
+
+
+<div class="container">
+<div class="col-xs-12">
+
+         <div class="careplus-fancy-title">
+                                <h2>GALLERY</h2>
+                                <span><small></small><i class="fas fa-link"></i></span>
+                            </div>
+    <div class="carousel slide" id="myCarousel">
+           <div class="carousel-inner careplus-team careplus-team-medium">
+            <div class="item active">
+                    <ul class="thumbnails row">
+        <li class="col-md-3">  
+                <div class="imghove">
+                <img src="images/img1.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+                                  
+                                    </li>
+
+
+
+  <li class="col-md-3">
+
+    <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+                                        
+                                    </li>
+
+                                     <li class="col-md-3">
+                                      <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+                                      
+                                    </li>
+
+                                     <li class="col-md-3">
+                                        <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div> 
+                                      
+                                        </figure>
+                                    </li>
+
+
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                  <ul class="thumbnails row">
+        <li class="col-md-3">     
+           <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>       
+                                    
+                                    </li>
+
+
+
+
+   <li class="col-md-3">
+     <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div> 
+                                    
+                                    </li>
+
+
+                                     <li class="col-md-3">
+                             <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div> 
+                                     
+                                    </li>
+
+                                     <li class="col-md-3">
+
+
+                                         <div class="imghove">
+                <img src="images/img2.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div> 
+
+
+                                       
+                                    </li>
+
+                                    
+                    </ul>
+              </div><!-- /Slide2 --> 
+           <!-- /Slide3 --> 
+        </div>
+        
+      
+                              
+    </div><!-- /#myCarousel -->
+        
+</div><!-- /.col-xs-12 -->          
+
+</div><!-- /.container -->
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<footer id="careplus-footer" class="careplus-footer-one">
+            <span class="careplus-footer-transparent"></span>
+            <!--// Footer Widget \\-->
+            <div class="careplus-footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <!--// Widget Contact Info \\-->
+                        
+                        
+                         <aside class="col-md-4 widget widget_contact_info">
+                            <h2 class="careplus-footer-title">About Us</h2>
+                            <p>Workboat Media Private Limited (“UPCHARR”) is the author and publisher of the internet resource http://www.upcharr.com and the mobile application ‘Upchar’ (together, “Website”). Upcharr owns and operates the services provided through the Website..
+                         <a href="aboutus.php" class="careplus-readmore-btn">read more <span></span></a>   </p>
+                        </aside>
+
+                        <!--// Widget Contact Info \\-->
+
+                        <!--// Widget Useful Link \\-->
+                        <aside class="col-md-4 widget widget_useful_link">
+                            <h2 class="careplus-footer-title">Useful Links</h2>
+                            <ul>
+                                <li><a href="aboutus.php">About Us</a></li>
+                                <li><a href="services.php">Our services</a></li>
+                                <li><a href="Blog.php">Blog</a></li>
+                                <li><a href="Careers.php">Careers</a></li>
+                                <li><a href="Press.php">Press</a></li>
+                                <li><a href="Contact Us.php">Contact Us</a></li>
+                                <li><a href="tc.html">Tearm And condition</a></li>
+                                <li><a href="gyantech.php">Workboat Media Pvt Ltd</a></li>
+                            </ul>
+                        </aside>
+                       
+                        <aside class="col-md-4 widget widget_contact_info">
+                            <h2 class="careplus-footer-title">Contact Us</h2>
+                            
+                            <ul>
+                                <li>
+                                    <h6>Call Us At:</h6>
+                                    <span>8448440603</span>
+                                </li>
+                                <li>
+                                    <h6>Mail Us At:</h6>
+                                    <a href="mailto:yourdomain@name.com">hello@upcharr.com - info@upcharr.com</a>
+                                </li>
+                                <li>
+                                    <h6>Our Location:</h6>
+                                    <span>N8/251 A-1-11 Newada Sundarpur B.H.U to D.L.W Street,Vranasi,Uttar pradesh 2210005 </span>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!--// Widget Newsletter \\-->
+
+                    </div>
+                </div>
+            </div>
+            <
+            <!--// Footer Widget \\-->
+
+            // Copy Right \\
+            <div class="careplus-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Upchaar <i class="fa fa-copyright"></i> 2018, All Right Reserved  </p>
+                            <a href="#" class="careplus-back-top"><i class="fa fa-angle-up"></i></a>
+                            <ul class="careplus-footer-social">
+                                <li><a href="https://www.facebook.com/Upchar-online-Medical-solution-2187443094907268/?__tn__=kC-R&amp;eid=ARDE9OXjTMIV4M7qlTFvSeN_jXXgDb1ZMzAfbesehXye06-TPEb2zP6-V8gqb__crERRdMn_Quqod_pL&amp;hc_ref=ARQBi9NRQDujn9jDDz0Q4mWg06mQ_iD_XcCTuEyXwZ-e3Vq-q-769KIvpe1ie3rUrr0&amp;__xts__%5B0%5D=68.ARDRzHqnWmt3fGAyBanIFx6lk0MLXmWnCbqdsE7vdw-oMqsZt6WR97juTtgAnO1uxFD0nMrYXQJ9_fe-A11H1XEe6Agc5R2Kkph8u3cj1g3wAwOJwQ9UCtRpQJtW1N3bThb9E7ruKNoqW-C-KCB6cge-5wzaoHuhzpFchHWhf-8zAZxJKzt2zc5ivrL_7KrBTcdxcGIYKBpUDt1yMusdWop9PMH0mRlknIFlHUejyZ3V4gdpKQ5rL7uLAjKifXeO_CEj_kdSDmWeOTGXR76MwDlaRznc-A3Fn72G/" target="_blank" class="fab fa-facebook"></a></li>
+                                <li><a href="https://twitter.com/amitkum35423465" target="_blank" class="fab fa-twitter-square"></a></li>
+                                <
+                                //<li><a href="https://pk.linkedin.com/" target="_blank" class="fab fa-invision"></a></li>
+                                <li><a href="https://plus.google.com/104908238854277970882/" target="_blank" class="fab fa-google-plus-square"></a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+
+            <!--// Copy Right \\-->
+
+
+        </footer>
+
+<div class="clearfix"></div>
+  
+
+
+
+<script type="text/javascript">
+  $('.carousel').carousel({
+  interval: 3000
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".showPartners").mouseover(function(){
+    $("#showBox").css("display", "block");
+    
+  });
+  $(".showPartners").mouseout(function(){
+    $("#showBox").css("display", "none");
+  });
+});
+
+</script>
+
+
+</body>
+</html>
