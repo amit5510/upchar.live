@@ -1,4 +1,4 @@
-﻿<head>
+<head>
     <style>
         .headingprivacy{
             background:#295771;

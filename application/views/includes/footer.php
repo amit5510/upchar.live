@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 $userlogin=$this->Userlogin_Model->c_count();
 ?>
 <head>

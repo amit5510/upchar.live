@@ -1,4 +1,4 @@
-﻿<?php include ("assets/includes/header_hospital.php"); ?>
+<?php include ("assets/includes/header_hospital.php"); ?>
 <?php include ("assets/includes/leftmenu_hospital.php"); ?>
         <div class="pag_cstm">
          

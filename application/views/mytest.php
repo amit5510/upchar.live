@@ -1,4 +1,4 @@
-﻿<?php include ("includes/header_new.php"); ?>
+<?php include ("includes/header_new.php"); ?>
 <style>
 .form-group {
     background: #9bc03c;

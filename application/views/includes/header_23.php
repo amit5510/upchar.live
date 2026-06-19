@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 if ($this->session->userdata('userid')!=''){ 
 	$userdata['id']=$this->session->userdata('userid');
 	$userdata['row']=$this->db->get_where('userlogin',array('USERID'=>$userdata['id']))->row();

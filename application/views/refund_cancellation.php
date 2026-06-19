@@ -1,4 +1,4 @@
-﻿<head>
+<head>
     <style>
 .headingrefound {
     background: #295771;

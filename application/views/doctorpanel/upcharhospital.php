@@ -1,4 +1,4 @@
-﻿<style>
+<style>
  #temp {
     float: left;
     height: 350px;

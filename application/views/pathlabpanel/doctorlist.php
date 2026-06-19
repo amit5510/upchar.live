@@ -1,4 +1,4 @@
-﻿<?php include ("assets/includes/header_pathlab.php"); ?>
+<?php include ("assets/includes/header_pathlab.php"); ?>
 
     <?php include ("assets/includes/leftmenu_pathlab.php"); ?>
 

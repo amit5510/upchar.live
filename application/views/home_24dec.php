@@ -1,4 +1,4 @@
-﻿<?php include ("includes/header.php"); ?>
+<?php include ("includes/header.php"); ?>
 <div class="careplus-navigation-section careplus-bgcolor" style="background-color: #08364b;">
                 <div class="container">
                     <div class="row">

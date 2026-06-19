@@ -1,4 +1,4 @@
-﻿<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Doctorregmodel extends CI_Model
 {
 	public function traineereginsert($drimage,$idproof='',$regproof='')

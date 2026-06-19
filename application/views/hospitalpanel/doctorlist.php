@@ -1,4 +1,4 @@
-﻿<style>
+<style>
 .confirmClick {
     background: #55ad27;
     color: white;

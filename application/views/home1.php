@@ -1,4 +1,4 @@
-﻿<head>
+<head>
     <link rel="icon" href="images/logo.png" type="images/logo.png" sizes="32x32">
 
 <style>

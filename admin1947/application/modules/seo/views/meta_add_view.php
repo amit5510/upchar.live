@@ -1,4 +1,4 @@
-﻿<?php //echo "<pre>"; print_r($clinic); die;?>
+<?php //echo "<pre>"; print_r($clinic); die;?>
 <!DOCTYPE html>
 <html>
   <style>
