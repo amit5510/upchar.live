@@ -1,0 +1,281 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+class Pathuser_Model extends CI_Model {
+    
+    public function changepass($userid){
+		$this -> db -> select(' * ');
+        $this -> db -> from('pathlogin');
+        $this -> db -> where('USERID', $userid);        
+		//$this -> db -> or_where('MOBILE', $mobile);
+        $this -> db -> where('STATUS', '1');
+        $this -> db -> where('APPROVED', '1');
+        $this -> db -> limit(1);
+        $query = $this -> db -> get();//echo  $this->db->last_query();
+		if($query -> num_rows() > 0)
+        {			
+			$row = $query->row();
+			if($row->STATUS==1){
+                
+			
+			$newpass=$this->input->post('pass');
+				//$otp=rand(100000,999999);
+				$this->db->where('USERID',$userid)->set('PASSWORD',md5($newpass))->update('pathlogin');
+				//$this->session->set_userdata('drforgotuserid', $row->USERID);
+				/* $msg="Dear ".$row->FNAME.",
+	 OTP to change password is $otp
+	UPCHARR";
+			sendsms($msg,$row->MOBILE); */
+				return 'SUCCESS';
+			}
+			else {
+				return 'FAILED';
+			}
+        }
+        else
+        {
+            return 'INVALID';
+        }
+	}
+	
+    public function forgotpass($mobile){
+		$this -> db -> select(' * ');
+        $this -> db -> from('pathlogin');
+        $this -> db -> where('EMAIL', $mobile);        
+		$this -> db -> or_where('MOBILE', $mobile);
+        //$this -> db -> where('STATUS', '1');
+       // $this -> db -> where('APPROVED', '1');
+        $this -> db -> limit(1);
+        $query = $this -> db -> get();//echo  $this->db->last_query();
+		if($query -> num_rows() > 0)
+        {			
+			$row = $query->row();
+			if($row->STATUS==1){
+                
+			
+			
+				$otp=rand(100000,999999);
+				$this->db->where('USERID',$row->USERID)->set('OTP',$otp)->update('pathlogin');
+				$this->session->set_userdata('pathforgotuserid', $row->USERID);
+				$msg="Dear ".$row->FNAME.",
+	 OTP to change password is $otp
+	UPCHARR";
+			sendsms($msg,$row->MOBILE);
+				return 'SUCCESS';
+			}
+			else {
+				return 'FAILED';
+			}
+        }
+        else
+        {
+            return 'INVALID';
+        }
+	}
+	
+	public function resendotp($mobile){
+		$this -> db -> select(' * ');
+        $this -> db -> from('pathlogin');
+        $this -> db -> where('EMAIL', $mobile);        
+		$this -> db -> or_where('MOBILE', $mobile);
+       // $this -> db -> where('STATUS', '1');
+        $this -> db -> where('APPROVED', '1');
+        $this -> db -> limit(1);
+        $query = $this -> db -> get();//echo  $this->db->last_query();
+		if($query -> num_rows() > 0)
+        {			
+			$row = $query->row();
+			if($row->OTP!= null ||$row->OTP!= ''){
+                
+			
+			
+				$otp=$row->OTP;
+				//$otp=rand(100000,999999);
+				//$this->db->where('USERID',$row->USERID)->set('OTP',$otp)->update('hospitallogin');
+				//$this->session->set_userdata('hosforgotuserid', $row->USERID);
+				$msg="Dear ".$row->FNAME.",
+	 Your One Time Password is $otp
+	UPCHARR";
+			sendsms($msg,$row->MOBILE);
+				return 'SUCCESS';
+			}
+			else {
+				return 'FAILED';
+			}
+        }
+        else
+        {
+            return 'INVALID';
+        }
+	}
+	 
+    public function login($email,$password){
+		$this -> db -> select(' * ');
+        $this -> db -> from('pathlogin');
+        $this -> db -> where('EMAIL', $email);        $this -> db -> or_where('MOBILE', $email);
+        $this -> db -> where('PASSWORD', $password);
+        $this -> db -> where('STATUS', '1');
+        $this -> db -> where('APPROVED', '1');
+        $this -> db -> limit(1);
+        $query = $this -> db -> get();//echo  $this->db->last_query();
+		if($query -> num_rows() > 0)
+        {			
+			$row = $query->row();
+            if($row->STATUS==1){
+                $this->session->set_userdata('pathuserid', $row->USERID);
+                $this->session->set_userdata('pathuseremail', $row->EMAIL);				           
+				$this->session->set_userdata('pathusername', $row->FNAME);
+           
+			if($row->CART!=''){
+				$cartArray = unserialize($row->CART);
+				$this->cart->insert($cartArray);
+			}
+			$this->load->model('Cart_Model');
+			$this->Cart_Model->update_cart_db();
+			return 'SUCCESS';
+			}
+			else if($row->STATUS==0){
+				$otp=rand(100000,999999);
+				$this->db->where('USERID',$row->USERID)->set('OTP',$otp)->update('pathlogin');
+				$this->session->set_userdata('pathsignupuserid', $row->USERID);
+				$msg="Wecome to Upchar medical solutions. Your otp is $otp
+thank you for being a part of Upchar.";
+			sendsms($msg,$row->MOBILE);
+				return 'OTP';
+			}
+			else if($row->STATUS==2){
+				return 'BLOCKED';
+			}
+        }
+        else
+        {
+            return 'FAILED';
+        }
+	}
+	
+	public function verifysignupotp($userid,$otp){
+		$this -> db -> select(' * ');
+        $this -> db -> from('pathlogin');
+        $this -> db -> where('USERID', $userid);        
+		$this -> db -> where('OTP', $otp);
+		$this -> db -> where('STATUS', '0');
+       // $this -> db -> where('APPROVED', '1');
+        $this -> db -> limit(1);
+        $query = $this -> db -> get();//echo  $this->db->last_query();
+		if($query -> num_rows() > 0)
+        {			
+			$row = $query->row();
+            if($row->OTP==$otp){
+				$this->db->where('USERID',$userid)->set('STATUS','1')->set('OTP',null)->update('pathlogin');//last_query();die;
+                $this->session->set_userdata('pathuserid', $row->USERID);
+                $this->session->set_userdata('pathuseremail', $row->EMAIL);				           
+				$this->session->set_userdata('pathusername', $row->FNAME);
+           
+			if($row->CART!=''){
+				$cartArray = unserialize($row->CART);
+				$this->cart->insert($cartArray);
+			}
+			$this->load->model('Cart_Model');
+			$this->Cart_Model->update_cart_db();
+			return 'SUCCESS';
+			}
+			else {
+				return 'FAILED';
+			}
+        }
+        else
+        {
+            return 'FAILED';
+        }
+	}
+	
+	public function verifyforgototp($userid,$otp){
+		$this -> db -> select(' * ');
+        $this -> db -> from('pathlogin');
+        $this -> db -> where('USERID', $userid);        
+		$this -> db -> where('OTP', $otp);
+		//$this -> db -> where('STATUS', '0');
+       // $this -> db -> where('APPROVED', '1');
+        $this -> db -> limit(1);
+        $query = $this -> db -> get();//echo  $this->db->last_query();
+		if($query -> num_rows() > 0)
+        {			
+			$row = $query->row();
+            if($row->OTP==$otp){
+				$this->db->where('USERID',$userid)->set('STATUS','1')->update('pathlogin');
+               
+			return 'SUCCESS';
+			}
+			else {
+				return 'FAILED';
+			}
+        }
+        else
+        {
+            return 'FAILED';
+        }
+	}
+	
+	public function register(){
+		$email=strtolower(trim($this->input->post('email')));
+		
+		$mobile=trim($this->input->post('mobile'));
+		$countemail=$this->db->where('EMAIL',$email)->count_all_results('pathlogin');
+		$countmobile=$this->db->where('MOBILE',$mobile)->count_all_results('pathlogin');
+		if($countemail > 0  && $email!='')
+		{
+			$response=array('status'=>'failed','msg'=>'EmailId Already Registered, Reset YouPassword if You Forgoten ! ');
+		}
+		else if($countmobile > 0 && $mobile!='')
+		{
+			$response=array('status'=>'failed','msg'=>'Mobile No. Already Registered, Reset YouPassword if You Forgoten ! ');
+		}
+		else if($mobile!='' || $email!='')
+		{
+			$pass=md5($this->input->post('password'));
+			$fullname=$this->input->post('name');
+			$name=explode(' ',ucwords($fullname));
+			$fname=$name[0];
+			$lname=@$name[1];
+			$otp=rand(100000,999999);
+			$msg="Dear ".$name[0].", Wecome to Upcharr medical solutions. Your otp is $otp
+thank you for being a part of Upchar.";
+			sendsms($msg,$mobile);
+			$udata=array(
+					'PASSWORD'=>$pass,
+					'FNAME'=>$fname,
+					'LNAME'=>$lname,
+					
+					'STATUS'=>'0',
+					'APPROVED'=>'1',
+					'OTP'=>$otp,
+					'REG_DATE'=>date('Y-m-d'),
+					'GENDER'=>'M'
+					); 
+			if($email)
+			$udata['EMAIL']=$email;
+			if($mobile)
+			$udata['MOBILE']=$mobile;
+			if($this->db->insert('pathlogin',$udata))
+			{   
+				$thisid = $this->db->insert_id();
+				
+				$this->db->insert('pathlab',array('id'=>$thisid,'name'=>$fullname,'email'=>$email,'mobile'=>$mobile,'verified'=>'0','approved'=>'0','status'=>'0'));//last_query();die;
+				$this->session->set_userdata('pathsignupuserid', $thisid);
+			
+				$response=array('status'=>'success','msg'=>'Registration Successful, Please Verify Email!');
+			}
+			else
+			{
+				$response=array('status'=>'failed','msg'=>'Something Went Wrong, Please Retry! ');
+			}
+		}else{
+				$response=array('status'=>'failed','msg'=>'Please Enter atleast any one either Email id or Mobile');
+		}
+		return $response;
+	}
+	
+	function logout(){
+		$this->cart->destroy();
+		$this->session->sess_destroy();
+	}
+}

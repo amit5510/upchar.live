@@ -1,0 +1,1040 @@
+
+<head>
+    <link rel="icon" href="images/logo.png" type="images/logo.png" sizes="32x32">
+ 
+
+<style>::placeholder{color:#000!important;opacity:.8!important}:-ms-input-placeholder{color:red}::-ms-input-placeholder{color:red}.mySlides{display:none}.mySlides3{display:none}.bannertext{animation-name:beatHeart;animation-duration:1.9s;animation-iteration-count:infinite}#appointmentbookicon{transition:.3s;transform:scale(1.1,1.1)}.bannerbox:hover{transform:scale(1.1,1.1)}.bannerbox{transition:.3s}@keyframes beatHeart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8,0.8);
+  }
+  28% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(0.8,0.8);
+  }
+  38% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  78% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}</style>
+
+</head>
+
+<header>
+   
+		<title>Welcome to Upchar </title>
+	<meta name="description" content="Welcome to Upchar"/>
+	<meta name="keywords" content="Welcome to Upchar"/>
+	  <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="3bLRst84x-i3OAEjC1W2UJbqB6wraXRJ08_NhsI6c4I"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8KL5W9D09"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z8KL5W9D09');</script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://www.upcharr.com/style_home.css">
+  <link rel="stylesheet" type="text/css" href="https://www.upcharr.com/style_home2.css">
+  <link rel="stylesheet" type="text/css" href="https://www.upcharr.com/media.css">
+  
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z8KL5W9D09');</script>
+ 
+  <style type="text/css">.login{margin-left:54px;border:1px solid #fff;padding:11px 30px;margin-top:9px;float:right;color:#fff}.login a{color:#fff}.login:hover{background:#9bc03c;color:#fff}.iconEffect{padding:7px;border-radius:20px;transition:.2s;transition-timing-function:ease-in}.navbar-nav>li:hover .iconEffect{transform:scale(1.3,1.3)}.dropdown:hover .dropdown-menu{display:block}.nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background-color:#9bc03c;border-color:#337ab7}.careplus-user-list li{margin:15px 0 0 -11px!important}#login-form-link,#register-form-link{color:#fff;padding:10px 22%}#login-form-link,#register-form-link:hover{text-decoration:none}.modelhead{background:#9bc03c}#login-submit{background:#9bc03c;color:#fff}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;background-color:#f1f1f1;min-width:158px;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:9;text-align:center}.dropdown-content a{color:#fff;padding:12px 16px;text-decoration:none;display:block;background:#043d5b}.dropdown-content a:active{background:red}.dropdown-content a:hover{background-color:#073146;color:#fff}.dropdown-menu li{background:#9bbf3c;text-align:center;border-bottom:2px solid #82a032}.dropdown-menu li a{color:#fff;font-weight:bold;background:#9abf3c;padding:12px 55px}.dropdown:hover .dropdown-content{display:block}.dropdown:hover .dropbtn{background-color:#073146;color:#fff}.mynavback{background:none!important}#boxdiv{margin-bottom:31px!important}.popboxdesign2{float:left;width:100%;height:88px}</style>
+  
+ 
+  <div id="myModal" class="modal fade" role="dialog" style="top: 10%;">
+    <div style="background-color: #9bc03c;   border-radius: 25px;"    class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content " style="background: #295771;;   border-radius: 25px;">
+        <div class="modal-header  " style="border-bottom:0px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!--         <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body text-center ">
+          <h1 style="color: white;font-weight: bold;">Bed availability for covid-19 in Kanpur</h1>
+          <a style="background-color: red;"class="fontSignUp" href='D:/saurabh/upchar/secondpage.html'>Click Here</a>
+          
+        </div>
+        <div class="modal-footer" style="border-top:0px;">
+          <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){       
+$('#myModal').modal('show');
+}); 
+</script>
+  <div class="container">
+      
+    <div class="row">
+      <aside class="col-md-3 logocont"><a href="https://www.upcharr.com/" class="careplus-logo"><script data-pagespeed-no-defer>//<![CDATA[
+(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://www.upcharr.com/','82dtZm2p5Q',true,false,'_hLS5C8SEGw');
+//]]></script><img id="upchar_logo" src="https://www.upcharr.com/images/Final_logo23.png" alt="" data-pagespeed-url-hash="2023427878" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></aside>
+      <aside class="col-md-9" id="HeadMobile">
+        <h2 class="sitename"><b>UPCHAR</b></h2>
+        <h6 class="slogan">one place of your healthcare</h6>
+        <nav class="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.upcharr.com/"><span class="glyphicon glyphicon-home iconEffect"></span> Home</a></li>
+            <li class="showPartners" data-target="#madicine"><a href="https://www.upcharr.com/"><span class="glyphicon glyphicon-thumbs-up iconEffect"></span> Upchar Partner</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="https://www.upcharr.com/">
+              <i class="fas fa-handshake iconEffect"></i> Partner Login <span class="caret"></span></a>
+              <ul class="dropdown-menu" style="background: none;">
+                <li> <a href="https://www.upcharr.com/doctor-aindex">Doctor</a></li>
+                <li> <a href="https://www.upcharr.com/hospital-aindex">Hospital</a></li>
+                <li> <a href="https://www.upcharr.com/pathlab-login">Pathology</a></li>
+              </ul>
+            </li>
+                        <li>
+              <a href="https://upcharrnews.blogspot.com/" target="_blank"><i class="fas fa-newspaper iconEffect"></i> Blog</a>
+            </li>
+            <li>
+              <a href="https://www.upcharr.com/login"><span class="glyphicon glyphicon-log-in iconEffect"></span> Login / <span class="glyphicon glyphicon-user iconEffect"></span> Sign Up </a>
+            </li>
+        	            </ul>
+        </nav>
+      </aside>
+      <img class="mobileIcon" src="images/menu_icon.png" data-pagespeed-url-hash="3127645946" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+    </div>    
+  </div>
+</header>
+<div id="showBox">
+  <div class="col-md-12" id="showboxmargin">
+    <div class="careplus-fancy-title" id="boxdiv">
+      <button style="background: #043d5b;color:white;padding: 11px 13px;opacity: 1;" class="close">x</button>
+      <h2 style="color:black;">Our Partner's</h2>
+      <span><small></small><i class="fas fa-link"></i></span>
+    </div>
+    <div class="careplus-blog careplus-blog-modern">
+      <ul class="row">
+        <li class="col-md-3" id="tabpopup">  
+          <figure class="popboxdesign"><a href='https://www.upcharr.com/hospitals'><img class="popboxdesign" src="images/Hospital.jpg" alt="" data-pagespeed-url-hash="4093404555" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><span><i class="fa fa-link"></i><small></small></span></a>
+          </figure>
+          <div class="careplus-blog-modern-text text-center">
+            <h6><a href='https://www.upcharr.com/hospitals'>Hospital</a></h6>
+          </div> 
+        </li>
+        <li class="col-md-3" id="tabpopup">
+          <figure class="popboxdesign"><a href="#"><img class="popboxdesign" src="images/blog-modern-img3.jpg" alt="" data-pagespeed-url-hash="653518376" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><span><i class="fa fa-link"></i><small></small></span></a>
+          </figure>
+          <div class="careplus-blog-modern-text text-center">
+            <h6><a href="#">Pathology</a></h6>
+          </div>
+        </li>
+        <li class="col-md-3" id="tabpopup">
+          <figure class="popboxdesign"><a href="#"><img class="popboxdesign" src="images/3d-printed-pharmaceuticals-header_kss.jpg" alt="" data-pagespeed-url-hash="2307879564" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><span><i class="fa fa-link"></i><small></small></span></a>
+          </figure>
+          <div class="careplus-blog-modern-text text-center">
+            <h6><a href="#" data-toggle="modal" data-target="#madicine">Medicine</a></h6>
+          </div>
+        </li>
+        <li class="col-md-3" id="tabpopup">
+          <figure class="popboxdesign"> <a href='https://www.upcharr.com/doctors'><img class="popboxdesign" class="popboxdesign" src="images/blog-modern-img2.jpg" alt="" data-pagespeed-url-hash="359018455" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><span><i class="fa fa-link"></i><small></small></span></a>
+          </figure>
+          <div class="careplus-blog-modern-text text-center">
+            <h6><a href='https://www.upcharr.com/doctors'>Doctor</a></h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">$(function(){$('#login-form-link').click(function(e){$("#login-form").delay(100).fadeIn(100);$("#register-form").fadeOut(100);$('#register-form-link').removeClass('active');$(this).addClass('active');e.preventDefault();});$('#register-form-link').click(function(e){$("#register-form").delay(100).fadeIn(100);$("#login-form").fadeOut(100);$('#login-form-link').removeClass('active');$(this).addClass('active');e.preventDefault();});});</script>
+
+<script>$(document).ready(function(){$("#showBox").hide();$(".showPartners").on("mouseenter",function(){$("#showBox").show();})
+$(".showPartners").on("mouseleave",function(){$("#showBox").hide();})
+$('#showBox').on("mouseleave",function(){$("#showBox").hide();});$(".close").click(function(){$("#showBox").css("display","none");});$("#showBox").on("mouseenter",function(){$("#showBox").show();})});</script>
+
+<script>$(document).ready(function(){$(".mobileIcon").click(function(){$(".navbar").slideToggle("slow");});});</script>    <div class="careplus-navigation-section careplus-bgcolor" style="background-color: #08364b;">
+        <div class="container">
+            <div class="row">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1"> </div>                   
+            </div>
+        </div>
+    </div>
+    <form action='https://www.upcharr.com/search' method='GET'>
+        <div class="box-form">
+            <div class="col-sm-3">
+                <div class="input-group shadow">
+                    <span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control ui-autocomplete-input" name="location" placeholder="Location" id="hintcity" autocomplete="off">
+                    <input type="hidden" class="form-control" name="city" id="city">
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="input-group shadow">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    <input type="text" id="hint" class="form-control ui-autocomplete-input" name="keyword" placeholder="Search Hospitals/Doctors/Clinics etc" autocomplete="off">
+                </div>       
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group shadow">
+                    <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                    <select class="form-control" name="spl">
+                        <option value="">-Specialization-</option>
+                                                <option value='148'> General  Surgeon</option>
+                                                <option value='128'> General Medicine </option>
+                                                <option value='147'> General physician</option>
+                                                <option value='135'> General Surgeon & Pediatric</option>
+                                                <option value='74'> Hair Transplant Surgeon</option>
+                                                <option value='96'> HIV A. R. T</option>
+                                                <option value='129'>Aanko Sarjan </option>
+                                                <option value='99'>ALLOPATHIC</option>
+                                                <option value='72'>Anaesthetist</option>
+                                                <option value='65'>Anxiety Disorder</option>
+                                                <option value='130'>Arthroscopy</option>
+                                                <option value='49'>ASTHMA</option>
+                                                <option value='76'>Audiology & Speech Therapy</option>
+                                                <option value='85'>Ayurveda</option>
+                                                <option value='63'>BAMS -Ayurveda</option>
+                                                <option value='103'>BUMS</option>
+                                                <option value='120'>C.M.O</option>
+                                                <option value='6'>Cardiologist</option>
+                                                <option value='73'>Consultant Physician</option>
+                                                <option value='131'>critical care</option>
+                                                <option value='113'>dental and oral surgeon</option>
+                                                <option value='153'>Dental Surgeon</option>
+                                                <option value='1'>Dentist</option>
+                                                <option value='13'>Dermatology</option>
+                                                <option value='79'>Dermatology & Cosmetology</option>
+                                                <option value='67'>DGO Medicine</option>
+                                                <option value='78'>Diabetes & Endocrinology</option>
+                                                <option value='56'>Dietician Specialist</option>
+                                                <option value='140'>E.N.T surgeon</option>
+                                                <option value='21'>Emergency Medicine</option>
+                                                <option value='84'>EMO</option>
+                                                <option value='51'>Endocrine And Breast Surgery</option>
+                                                <option value='155'>Endocrine Surgeon</option>
+                                                <option value='70'>Endocrinologist</option>
+                                                <option value='10'>ENT </option>
+                                                <option value='144'>ENT/ Otorhinolaryngoligist</option>
+                                                <option value='112'>Eye</option>
+                                                <option value='97'>EYE OPHTHALMOLOGY</option>
+                                                <option value='71'>Eye Surgeon</option>
+                                                <option value='110'>F.I.P.S</option>
+                                                <option value='118'>Gastro& Uro Surgeon</option>
+                                                <option value='58'>Gastroenterology</option>
+                                                <option value='142'>Gastrolntestinal Surgeon</option>
+                                                <option value='149'>General  Practitioner</option>
+                                                <option value='38'>General  Surgeon</option>
+                                                <option value='22'>General Medicine</option>
+                                                <option value='101'>GENERAL PHYGICIAN</option>
+                                                <option value='152'>General Physician</option>
+                                                <option value='123'>generalphysician</option>
+                                                <option value='141'>Germatologist</option>
+                                                <option value='133'>Gyane & laproscopy surgery</option>
+                                                <option value='136'>Gynecologist,General physician, Infertil</option>
+                                                <option value='12'>Gynecology &Obstetrics</option>
+                                                <option value='61'>Homeopathy</option>
+                                                <option value='127'>Infertility</option>
+                                                <option value='82'>Infertility & Reproductive Medicine</option>
+                                                <option value='68'>IVF Specialist</option>
+                                                <option value='154'>Laparoscopic Surgeon</option>
+                                                <option value='137'>Laparoscopic surgeon, Bariatric surgeon</option>
+                                                <option value='157'>LaparoscopicSurgeon </option>
+                                                <option value='114'>Laparoscopy surgeon</option>
+                                                <option value='43'>Laproscopy surgeon </option>
+                                                <option value='116'>M.s(Nuro surgery)</option>
+                                                <option value='117'>management</option>
+                                                <option value='88'>Maxilo Facial Surgeon</option>
+                                                <option value='64'>MBBS, DPM</option>
+                                                <option value='107'>MD</option>
+                                                <option value='44'>MD (OBS & Gyne)</option>
+                                                <option value='146'>MD General Medicine</option>
+                                                <option value='39'>MD(Medicine)</option>
+                                                <option value='40'>MD(Medicine)physician and hematologist</option>
+                                                <option value='41'>MD(Pediatrics)</option>
+                                                <option value='42'>MS(OBG&GYNAE)</option>
+                                                <option value='89'>Naturopathy</option>
+                                                <option value='98'>NEONATOLGY</option>
+                                                <option value='57'>Nephrologist</option>
+                                                <option value='126'>Nephrology</option>
+                                                <option value='109'>Neuro</option>
+                                                <option value='122'>Neuro&physician</option>
+                                                <option value='106'>NEURO-PSYCHIATRISTt</option>
+                                                <option value='14'>Neurology</option>
+                                                <option value='111'>neuropsychiatry</option>
+                                                <option value='8'>Neurosurgery</option>
+                                                <option value='95'>ONCO MEDICINE</option>
+                                                <option value='47'>Oncologist</option>
+                                                <option value='11'>Ophthalmology</option>
+                                                <option value='83'>Oral & Maxillofacial Surgeon</option>
+                                                <option value='77'>Orthopedic /Orthopadic Surgeon /D.Ortho </option>
+                                                <option value='108'>paediatric</option>
+                                                <option value='80'>Paediatrics & Neonatology</option>
+                                                <option value='92'>PAIN CLINIC</option>
+                                                <option value='124'>Pain management & Critical care</option>
+                                                <option value='105'>PAIN PHYSICIAN</option>
+                                                <option value='15'>Pathology</option>
+                                                <option value='81'>Pediatric & General Surgery</option>
+                                                <option value='156'>Pediatric surgeon</option>
+                                                <option value='48'>Pediatrician</option>
+                                                <option value='132'>Pediatrician & Nephrology</option>
+                                                <option value='19'>Pediatrics</option>
+                                                <option value='7'>Physician</option>
+                                                <option value='134'>Physicians & surgeon</option>
+                                                <option value='60'>Physiotherapist</option>
+                                                <option value='59'>Physiotherapy</option>
+                                                <option value='53'>Plastic Surgeon</option>
+                                                <option value='90'>POST PARTUM</option>
+                                                <option value='18'>Psychiatry</option>
+                                                <option value='66'>Pulmonology</option>
+                                                <option value='20'>Radiation Oncology</option>
+                                                <option value='55'>Radiologist</option>
+                                                <option value='16'>Radiology</option>
+                                                <option value='91'>RADIOTHERAPY</option>
+                                                <option value='46'>Respiratory medicine</option>
+                                                <option value='151'>Rheumatologist</option>
+                                                <option value='94'>RHEUMATOLOGY</option>
+                                                <option value='102'>SKIN</option>
+                                                <option value='121'>surgeon</option>
+                                                <option value='150'>Surgical Oncologist</option>
+                                                <option value='52'>T.B. & Chest</option>
+                                                <option value='143'>Urologist&Andrologist</option>
+                                                <option value='9'>Urology </option>
+                                                <option value='100'>X-RAY</option>
+                                           
+                    </select>
+                </div> 
+            </div>
+            <div class="col-sm-1">
+                <button class="careplus-booking-btn careplus-bgcolor-two" id="searchBTN"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <iframe class="videoCode" src="https://www.youtube.com/embed/XQzm5iBEkVs" target="_self" frameborder="0" allow="autoplay"></iframe>
+            </div>
+            <div class="col-sm-6">
+                <div class="spacingText">
+                    <div class="center">
+                        <div id="text">
+                            <h2>FASTEST ONLINE HOSPITAL SERVICE'S</h2>
+                            <br>
+                            <h3>Best Online Hospital Services In All Over India.</h3>
+                        </div>
+                    </div>
+                    <ul class="ulList">
+                        <li><span class="glyphicon rightIcon">&#xe013;</span> Online Book Doctors</li>
+                        <li><span class="glyphicon rightIcon">&#xe013;</span> Hospital Facilities Online</li>
+                        <li><span class="glyphicon rightIcon">&#xe013;</span> Buy Medicine Online</li>
+                        <li><span class="glyphicon rightIcon">&#xe013;</span> Fastest Ambulance Service's</li>
+                        <li><span class="glyphicon rightIcon">&#xe013;</span> Biomedical Equipment's Service's</li>
+                        <button class="fontSignUp">Book Now</button>
+                    </ul>
+                    <img class="bannertext" src="images/heart.png" alt="Welcome In Upchar" data-pagespeed-url-hash="2642243107" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <div class=bannerbox>
+                        <a href="https://www.upcharr.com/search?location=&city=&keyword=&spl="><h4 style="font-weight:bold;color:white;text-shadow: 0px -3px 5px #464545;"><i class="fa fa-calendar" id="appointmentbookicon" aria-hidden="true"></i> Book  Appointment</h4></a>
+                        <a href="https://www.upcharr.com/login"><span class="NewButton" id="appointmentbookicon">Create Account</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="careplus-banner-one slick-initialized slick-slider">
+        <div aria-live="polite" class="slick-list draggable">
+            <div class="slick-track" role="listbox" style="opacity: 1; width: 2698px;height:0px;">
+                <div class="careplus-banner-one-layer slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 1349px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                </div>
+                <div class="careplus-banner-one-layer slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 1349px; position: relative; left: -1349px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;">
+                    <img src="images/banner-2.jpg" alt="" data-pagespeed-url-hash="3346061574" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <span class="careplus-transparent"></span>
+                    <div class="careplus-banner-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="careplus-banner-wrap">
+                                        <h1><span>You Can’t</span>Always Be There<span>But We CAn</span></h1>
+                                        <div class="clearfix"></div>
+                                        <a href="404.html" class="careplus-banner-btn" tabindex="-1">Read More <span></span></a>
+                                    </div>
+                                    <div class="careplus-appointment-form">
+                                        <form>
+                                            <label>Book Appointment</label>
+                                            <ul>
+                                                <li>
+                                                    <input type="text" value="Full Name" onblur="if(this.value == '') { this.value ='Full Name'; }" onfocus="if(this.value =='Full Name') { this.value = ''; }" tabindex="-1">
+                                                    <i class="fa fa-user"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" value="Phone" onblur="if(this.value == '') { this.value ='Phone'; }" onfocus="if(this.value =='Phone') { this.value = ''; }" tabindex="-1">
+                                                    <i class="fa fa-phone"></i>
+                                                </li>
+                                                <li>
+                                                    <input type="text" value="mm / dd / yyyy" onblur="if(this.value == '') { this.value ='mm / dd / yyyy'; }" onfocus="if(this.value =='mm / dd / yyyy') { this.value = ''; }" tabindex="-1">
+                                                    <i class="fa fa-calendar"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="careplus-select">
+                                                        <select tabindex="-1">
+                                                            <option value="">Choose Department</option>
+                                                            <option value="pakistan"> Department</option>
+                                                            <option value="india"> Department</option>
+                                                            <option value="usa"> Department</option>
+                                                            <option value="student"> Department</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="submit" value="Submit Now" tabindex="-1">
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <div class="careplus-main-section careplus-team-mediumfull">
+            <div class="container">                    
+                <div class="careplus-fancy-title">
+                    <h2>Our Specialists</h2>
+                    <span><small></small><i class="fas fa-link"></i></span>
+                </div>
+                <div class="container-fluid" id="tabSpecialists">
+                    <div class="col-xs-12">
+                        <div class="carousel slide" id="myCarousel">
+                            <div class="carousel-inner careplus-team careplus-team-medium">
+                                                                                                <div class="item active">
+                                    <ul class="thumbnails row">                                           <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_3087261182021-04-03.png" style=" position: relative;" alt="" data-pagespeed-url-hash="4078331941" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Sandesh singh</a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">MD</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/2014">Dr.Sandesh singh</a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">MD</span>
+                                                        <a href="https://www.upcharr.com/doctor/2014">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_3087261182021-04-03.png" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="4078331941" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/2014" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_8955532212021-04-03.png" style=" position: relative;" alt="" data-pagespeed-url-hash="851179763" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Vivek Srivastava</a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">Ms</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/2017">Dr.Vivek Srivastava</a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">Ms</span>
+                                                        <a href="https://www.upcharr.com/doctor/2017">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_8955532212021-04-03.png" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="851179763" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/2017" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_18126696220210412.png" style=" position: relative;" alt="" data-pagespeed-url-hash="3799092072" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Nishant  Singh </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">Ms</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/1912">Dr.Nishant  Singh </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">Ms</span>
+                                                        <a href="https://www.upcharr.com/doctor/1912">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_18126696220210412.png" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="3799092072" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/1912" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_7007709452021-04-06.jpg" style=" position: relative;" alt="" data-pagespeed-url-hash="1965739005" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Ashish Tiwari</a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">DNB(SURGEON)</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/2039">Dr.Ashish Tiwari</a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">DNB(SURGEON)</span>
+                                                        <a href="https://www.upcharr.com/doctor/2039">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_7007709452021-04-06.jpg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="1965739005" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/2039" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                                                                                                    <div class="item ">
+                                    <ul class="thumbnails row">                                           <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_3443331620190515.jpg" style=" position: relative;" alt="" data-pagespeed-url-hash="909956161" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Anil kumar singh </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">MBBS</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/90">Dr.Anil kumar singh </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">MBBS</span>
+                                                        <a href="https://www.upcharr.com/doctor/90">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_3443331620190515.jpg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="909956161" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/90" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_70894731620200113.jpeg" style=" position: relative;" alt="" data-pagespeed-url-hash="479609926" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Subham Verma </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">MBBS</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/1448">Dr.Subham Verma </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">MBBS</span>
+                                                        <a href="https://www.upcharr.com/doctor/1448">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_70894731620200113.jpeg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="479609926" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/1448" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_916197422021-04-06.jpg" style=" position: relative;" alt="" data-pagespeed-url-hash="1581398251" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Vikas kumar</a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">DNB</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/2037">Dr.Vikas kumar</a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">DNB</span>
+                                                        <a href="https://www.upcharr.com/doctor/2037">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_916197422021-04-06.jpg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="1581398251" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/2037" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_38108420120190421.jpg" style=" position: relative;" alt="" data-pagespeed-url-hash="2022851861" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr Anupama goel </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">DM</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/92">Dr Anupama goel </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">DM</span>
+                                                        <a href="https://www.upcharr.com/doctor/92">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_38108420120190421.jpg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="2022851861" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/92" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                                                                                                    <div class="item ">
+                                    <ul class="thumbnails row">                                           <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_78851928420200113.jpg" style=" position: relative;" alt="" data-pagespeed-url-hash="3950279744" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Manoj Sharma </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">PGDGM</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/1442">Dr.Manoj Sharma </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">PGDGM</span>
+                                                        <a href="https://www.upcharr.com/doctor/1442">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_78851928420200113.jpg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="3950279744" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/1442" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_41388875620200106.jpeg" style=" position: relative;" alt="" data-pagespeed-url-hash="3005959051" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Alok.C.Bhardwaj </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">MBBS</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/1412">Dr.Alok.C.Bhardwaj </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">MBBS</span>
+                                                        <a href="https://www.upcharr.com/doctor/1412">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_41388875620200106.jpeg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="3005959051" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/1412" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_67278558820200113.jpeg" style=" position: relative;" alt="" data-pagespeed-url-hash="1661865899" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Nitin Srivasatva </a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">MBBS</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/1445">Dr.Nitin Srivasatva </a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">MBBS</span>
+                                                        <a href="https://www.upcharr.com/doctor/1445">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_67278558820200113.jpeg" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="1661865899" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/1445" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                                                                <li class="col-md-3" id="tabspecilist">
+                                            <figure><a href=""><img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_7348155062021-04-03.png" style=" position: relative;" alt="" data-pagespeed-url-hash="2094039764" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                                <figcaption>
+                                                    <div class="careplus-team-medium-info" style="background:#9bc03c;">
+                                                        <h6><a style="color:white;" href="#">Dr.Vikash kumar singh</a></h6>
+                                                        <span style="color:white;text-align:center;width: 100%;">Mch</span>
+                                                    </div>
+                                                    <div class="careplus-team-medium-text">
+                                                        <h6><a style="color:white;" href="https://www.upcharr.com/doctor/2015">Dr.Vikash kumar singh</a></h6>
+                                                        <span style="color:white;text-align:center;padding:;width: 100%;">Mch</span>
+                                                        <a href="https://www.upcharr.com/doctor/2015">  <img src="https://www.upcharr.com/admin1947/public/assets/upload/dr_profile_pic_7348155062021-04-03.png" style="position: relative;height: 192px;border: 23px solid #87b511;margin:18px 15px;border-radius: 122px;width:186px;box-shadow:2px 2px 5px #55710c;" data-pagespeed-url-hash="2094039764" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                        </a>
+                                                        <a href="https://www.upcharr.com/doctor/2015" class="careplus-readmore-btn">View <span></span></a>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                                                            
+                            </div>
+                            <nav>
+                                <ul class="control-box pager">
+                                    <li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+                                    <li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                                </ul>
+                            </nav>
+                            <!-- /.control-box -->                         
+                        </div><!-- /#myCarousel -->     
+                    </div><!-- /.col-xs-12 -->          
+                </div><!-- /.container -->
+            </div>
+        </div>
+    </div>
+	<div class="careplus-main-section careplus-team-mediumfull">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="careplus-fancy-title">
+						<h2>Latest News</h2>
+						<span><small></small><i class="fas fa-link"></i></span>
+					</div>
+					<div class="careplus-team careplus-team-medium">
+						<ul class="row">
+						 							<li class="col-md-3">
+								<figure><a href="#"><img src="https://www.upcharr.com/admin1947/public/assets/upload/dummy_video.jpg" alt="" data-pagespeed-url-hash="2454038117" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+									<figcaption>
+										<div class="careplus-team-medium-info">
+											<h5><a href="#">new strain of covid 19</a></h5>
+										</div>
+										<div class="careplus-team-medium-text">
+											<h5><a href="#">new strain of covid 19</a></h5></br>
+											<p>https://youtu.be/kveb1BA6raw
+NDTV News  HEADLINE</p></br>
+											<a href="https://www.upcharr.com/news/NDk-" class="careplus-readmore-btn">read more <span></span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+						 							<li class="col-md-3">
+								<figure><a href="#"><img src="https://www.upcharr.com/admin1947/public/assets/upload/dummy_video.jpg" alt="" data-pagespeed-url-hash="2454038117" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+									<figcaption>
+										<div class="careplus-team-medium-info">
+											<h5><a href="#">the global health challen</a></h5>
+										</div>
+										<div class="careplus-team-medium-text">
+											<h5><a href="#">the global health challenge in 2021.</a></h5></br>
+											<p>BBC News</p></br>
+											<a href="https://www.upcharr.com/news/NDg-" class="careplus-readmore-btn">read more <span></span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+						 							<li class="col-md-3">
+								<figure><a href="#"><img src="https://www.upcharr.com/admin1947/public/assets/upload/dummy_video.jpg" alt="" data-pagespeed-url-hash="2454038117" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+									<figcaption>
+										<div class="careplus-team-medium-info">
+											<h5><a href="#">coronavirus: More health </a></h5>
+										</div>
+										<div class="careplus-team-medium-text">
+											<h5><a href="#">coronavirus: More health myths to ignore</a></h5></br>
+											<p>bbc news  </p></br>
+											<a href="https://www.upcharr.com/news/NDc-" class="careplus-readmore-btn">read more <span></span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+						 							<li class="col-md-3">
+								<figure><a href="#"><img src="https://www.upcharr.com/admin1947/public/assets/upload/dummy_video.jpg" alt="" data-pagespeed-url-hash="2454038117" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+									<figcaption>
+										<div class="careplus-team-medium-info">
+											<h5><a href="#">safety measures after get</a></h5>
+										</div>
+										<div class="careplus-team-medium-text">
+											<h5><a href="#">safety measures after getting vaccinated</a></h5></br>
+											<p>all about vaccine of corona </p></br>
+											<a href="https://www.upcharr.com/news/NDY-" class="careplus-readmore-btn">read more <span></span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+						 						</ul>
+					</div>
+					<nav>
+						<ul class="control-box pager">
+							<!--<button style="color: white;padding:4px 17px;border-radius: 61px;margin: 6px;float: right;background: #9bc03c;font-weight: bold;    border: none;">See More </button>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// Main Section \\-->
+    <div class="careplus-main-section careplus-blog-modern-full">
+        <div class="container">
+            <div class="careplus-fancy-title" style="margin-top: -27px;">
+                <h2>Our Partner's</h2>
+                <span><small></small><i class="fas fa-link"></i></span>
+            </div>
+            <div class="careplus-blog careplus-blog-modern">
+                <ul class="row">
+                    <li class="col-md-3">
+                                                <figure>
+                            <a href='https://www.upcharr.com/hospital-login'> 
+                                <div class="w3-content w3-section">
+                                    <img class="mySlides w3-animate-bottom" src="https://www.upcharr.com/admin1947/public/assets/upload/disp_profile_pic_59192091320190504.jpg" data-pagespeed-url-hash="1044725501" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <span><i class="fa fa-link"></i><small></small></span>
+                            </a>   
+                        </figure>
+                        <div class="careplus-blog-modern-text text-center">
+                            <p><a href='https://www.upcharr.com/hospital-login'>POPULAR HOSPITAL</a></p>
+                        </div> 
+                                            </li>
+                    <li class="col-md-3">
+                        <figure>
+                            <a href="blog-detail.php">
+                                <div class="w3-content w3-section">
+                                    <img class="mySlides2 w3-animate-bottom" src="images/Hospital.jpg" data-pagespeed-url-hash="4093404555" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <img class="mySlides2 w3-animate-bottom" src="images/ChemicalPathology.jpg" data-pagespeed-url-hash="2831079718" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <img class="mySlides2 w3-animate-bottom" src="images/Hospital.jpg" data-pagespeed-url-hash="4093404555" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <img class="mySlides2 w3-animate-bottom" src="images/ChemicalPathology.jpg" data-pagespeed-url-hash="2831079718" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <span><i class="fa fa-link"></i><small></small></span>
+                            </a>
+                        </figure>
+                        <div class="careplus-blog-modern-text text-center">
+                            <p><a href='https://www.upcharr.com/pathlab-login'>Pathology</a></p>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <figure>
+                            <a href="blog-detail.php">
+                                <div class="w3-content w3-section">
+                                    <img class="mySlides3 w3-animate-bottom" src="images/Hospital.jpg" data-pagespeed-url-hash="4093404555" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <img class="mySlides3 w3-animate-bottom" src="images/ChemicalPathology.jpg" data-pagespeed-url-hash="2831079718" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <img class="mySlides3 w3-animate-bottom" src="images/Hospital.jpg" data-pagespeed-url-hash="4093404555" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <img class="mySlides3 w3-animate-bottom" src="images/ChemicalPathology.jpg" data-pagespeed-url-hash="2831079718" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>    
+                                <span><i class="fa fa-link"></i><small></small></span>
+                            </a>
+                        </figure>
+                        <div class="careplus-blog-modern-text text-center">
+                            <p><a href="https://www.upcharr.com/pathdoctor-login">Medicine</a></p>
+                        </div>
+                    </li>
+					                    <li class="col-md-3">
+                        <figure>
+                            <a href='https://www.upcharr.com/doctor-login'>
+                                <div class="w3-content w3-section">
+                                    <img class="mySlides4 w3-animate-bottom" src="https://www.upcharr.com/admin1947/public/assets/upload/dummydr.jpg" data-pagespeed-url-hash="2379719691" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>   
+                                <span><i class="fa fa-link"></i><small></small></span>
+                            </a>
+                        </figure>
+                        <div class="careplus-blog-modern-text text-center">
+                            <p><a href='https://www.upcharr.com/doctor-login'>Dr</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="careplus-main-section careplus-blog-modern-full">              
+        <div class="col-md-12">
+            <div class="careplus-fancy-title" style="margin-top: 100px;">
+                <h2>Gallery</h2>
+                <span><small></small><i class="fas fa-link"></i></span>
+            </div>
+        </div>
+        <div id="mobileGallery">
+            <div class="container" id="tabgallery">
+                <div class="item active">
+                    <ul class="thumbnails row">
+                                                <li class="col-md-3 mobileGallery2">  
+                            <div class="imghove">
+                                <img src="https://www.upcharr.com/admin1947/public/assets/upload/_profile_pic_1767997132020-02-28.jpg" alt="Avatar" class="image" data-pagespeed-url-hash="1988290565" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                        </li>
+                                            </ul>
+                </div>  
+                <button style="color: white;padding:4px 17px;border-radius: 61px;margin: 6px;float: right;background: #9bc03c;font-weight: bold;    border: none;">See More </button>
+            </div>
+        </div>
+    </div>    
+    <div class="clearfix"></div>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<footer id="careplus-footer" class="careplus-footer-one">
+    <span class="careplus-footer-transparent"></span>
+	<!--// Footer Widget \\-->
+	<div class="careplus-footer-widget">
+		<div class="container">
+			<div class="row">
+				<!--// Widget Contact Info \\-->
+				<aside class="col-md-4 widget widget_contact_info">
+					<a href="https://www.upcharr.com/" class="footer-logo"><img src="https://www.upcharr.com/images/Upchar_footer.png" alt="" style="height: 100px;margin-bottom:0px;" data-pagespeed-url-hash="289916802" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+					<p>Workboat Media Private Limited (“UPCHAR”) is the author and publisher of the internet resource <a href="https://www.upcharr.com" target='_blank' style="text-decoration: none;
+					color: #008CBA;"> https://www.upcharr.com</a> and the mobile application ‘Upchar’ (together, “Website”). Upchar owns and operates the services provided through the Website..<br>
+					<a href="https://www.upcharr.com/aboutus" class="careplus-readmore-btn">read more <span></span></a>   </p>
+				</aside>
+				<!--// Widget Contact Info \\-->
+				<!--// Widget Useful Link \\-->
+				<aside class="col-md-4 widget widget_useful_link">
+					<h2 class="careplus-footer-title">Useful Links</h2>
+					<ul id="mobilefooter">
+						<li><a href="https://www.upcharr.com/aboutus">About Us</a></li>
+						<li><a href="https://www.upcharr.com/Home/services">Our services</a></li>
+						<li><a href="https://www.upcharr.com/refund_cancellation">Refund & Cancellation</a></li>
+						<li><a href="https://www.upcharr.com/Home/career">Careers</a></li>
+						<li><a href="https://www.upcharr.com/privacy">Privacy Policy</a></li>
+						<li><a href="https://www.upcharr.com/Home/contactus">Contact Us</a></li>
+						<li><a href="https://www.upcharr.com/tnc">Term And condition</a></li>
+						<li><a href="https://www.upcharr.com/Upchar_Patient.apk">Download App</a></li>
+						<li><a href="#" target='_blank'>Workboat Media Pvt Ltd</a></li>
+					</ul>
+				</aside>
+				<aside class="col-md-4 widget widget_contact_info">
+					<h2 class="careplus-footer-title">Contact Us</h2>
+					<ul>
+						<li>
+							<h6>Call Us At:</h6>
+							<span>Customer care NO - 844-844-0603</span>
+						</li>
+						<li>
+							<h6>Mail Us At:</h6>
+							<a href="mailto:info@upcharr.com">hello@upcharr.com - info@upcharr.com</a>
+						</li>
+						<li>
+							<h6>Our Location:</h6>
+							<span>N8/251 A-1-11 Newada Sundarpur B.H.U to D.L.W Street,varanasi,Uttar pradesh 221005 </span>
+						</li>
+					</ul>
+				</aside>
+				<!--// Widget Newsletter \\-->
+			</div>
+		</div>
+	</div>
+	<!--// Footer Widget \\-->
+	<!--// Copy Right \\-->
+	<div class="careplus-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Upchar <i class="fa fa-copyright"></i> 2019, All Right Reserved  </p>
+					<a href="#" class="careplus-back-top"><i class="fa fa-angle-up"></i></a>
+					<ul class="careplus-footer-social">
+						<li><a href="#">
+							<h5 style="margin-right: 281px;
+								background: white;
+								padding: 3px 34px;
+								border-radius: 34pc;
+								color: black;;"> Views 1062							</h5>
+						</li>
+						<li><a href="https://www.facebook.com/Upchar-online-Medical-solution-2187443094907268/?__tn__=kC-R&eid=ARDE9OXjTMIV4M7qlTFvSeN_jXXgDb1ZMzAfbesehXye06-TPEb2zP6-V8gqb__crERRdMn_Quqod_pL&hc_ref=ARQBi9NRQDujn9jDDz0Q4mWg06mQ_iD_XcCTuEyXwZ-e3Vq-q-769KIvpe1ie3rUrr0&__xts__%5B0%5D=68.ARDRzHqnWmt3fGAyBanIFx6lk0MLXmWnCbqdsE7vdw-oMqsZt6WR97juTtgAnO1uxFD0nMrYXQJ9_fe-A11H1XEe6Agc5R2Kkph8u3cj1g3wAwOJwQ9UCtRpQJtW1N3bThb9E7ruKNoqW-C-KCB6cge-5wzaoHuhzpFchHWhf-8zAZxJKzt2zc5ivrL_7KrBTcdxcGIYKBpUDt1yMusdWop9PMH0mRlknIFlHUejyZ3V4gdpKQ5rL7uLAjKifXeO_CEj_kdSDmWeOTGXR76MwDlaRznc-A3Fn72G/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://twitter.com/amitkum35423465" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="https://pk.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="https://plus.google.com/104908238854277970882/" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// Copy Right \\-->
+</footer>
+<!--// Footer \\-->
+<div class="clearfix"></div>
+<!--// Main Wrapper \\-->
+<!-- Modal -->
+<div class="modal fade searchmodal" id="searchmodal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+		<div class="modal-body">
+			<a href="#" class="careplus-close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+			<form>
+				<input type="text" value="Type Your Keyword" onblur="if(this.value == '') { this.value ='Type Your Keyword'; }" onfocus="if(this.value =='Type Your Keyword') { this.value = ''; }">
+				<input type="submit" value="">
+				<i class="fa fa-search"></i>
+			</form>
+		</div>
+    </div>
+</div>
+<div id="conmermation"/>
+    <div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="col-sm-6 borders confer">
+						<form method='post' action='https://www.upcharr.com/home/bookappointment' id='app_conf_form'>
+							<div class="careplus-fancy-titles">
+							  <h2>Confirm Appointment</h2>
+							  <input value="" type="text" id="app_conf_pop_doctorid" style="display:none;" name="app_doctor" class="form-control">
+							</div>
+							<div class="label_name">
+								<label>Choose your Date</label>
+								<!-- <input  type="text" placeholder="click to show Datepicker" class="form-control" id="example1" >-->
+								<select class="form-control" name='app_date' id='app_conf_pop_date' required></select>
+								<label>Select Time<span>*</span></label>
+								<select class="form-control" name='app_time' id='app_conf_pop_time' required></select>
+								<label>Patient/Visitor Name<span>*</span></label>
+								<input value="" type="text" name="app_name" id='app_conf_name' class="form-control" required>
+								<label style="color:black;">Mobile Number<span>*</span></label>
+								<input value="" type="text" name="app_mobile" id='app_conf_mobile' class="form-control" onkeypress="return isNumber(event)" required>
+								<label style="color:black;">E-mail Id</label>
+								<input value="" type="email" name="app_email" class="form-control">
+																<div style='display:none;' id='app_conf_otp'>
+									<label style="color:black;">Send OTP<span>*</span></label>
+									<input value="" type="text" name="app_otp" class="form-control" required>
+								</div>
+																								<p style=" margin-top: 10px;">You will receive an SMS with a verification code on this number</p>
+								<p>By booking the appointment, you agree to Upchar's <a href="#">Terms and Conditions.</a></p>
+								<button type="button" id='app_conf_otp_submit' class="btn  btn-lg common-btn con_done">Send OTP    </button>
+								<button type="submit" style='display:none;' id='app_conf_submit' class="btn  btn-lg common-btn con_done">Verify & Book Appointment </button>
+															</div>
+						</form>
+					</div>
+					<div class="col-sm-6 right_box" id='app_conf_pop_doctor'>
+						<div class="col-md-4">
+							<img src="extra-images/team-list-img1.jpg" alt="" data-pagespeed-url-hash="1349955549" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+						</div>
+						<div class="col-md-8">
+							<div class="doc_nam_inf">
+								<span>Loading...</span>
+								<ul>
+									<li>Loading... </li>
+									<li>Loading... </li>
+									<li><b>Loading...</b></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 right_box" id='app_conf_pop_institute'>
+						<div class="col-md-4">
+							<img src="images/dentist.png" alt="" data-pagespeed-url-hash="993486092" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+						</div>  
+						<div class="col-md-8">
+							<div class="doc_nam_inf">
+								<span>Dr. Birendra Kumar Pawar</span>
+								<ul>
+									<li>579, Pocket C/8 , Sector-8 , Madhuban Chowk, Metro Pillar No. 373, Delhi </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+    </div>
+</div>
+<script type="text/javascript">$(document).ready(function(){$('#example1').datepicker({format:"dd/mm/yyyy"});});</script>
+<script>function isNumber(evt){evt=(evt)?evt:window.event;var charCode=(evt.which)?evt.which:evt.keyCode;if(charCode>31&&(charCode<48||charCode>57)){return false;}return true;}</script>
+<script type="text/javascript" src="https://www.upcharr.com/css/bootstrap-datepicker.js"></script>
+<script>$('#registrationform').submit(function(e){e.preventDefault(e);var myform=$(this);var validation=true;var email=$('#email').val();var mobile=$('#mobile').val();var name=$('#name').val();var password=$('#password').val();if(email!=''&&!isEmail(email)){validation=false;myalert('Please Enter a Valid Email Address','Invalid');return false;}if(mobile==''||mobile.length!=10){validation=false;myalert('Please Enter a Valid Mobile Number','Invalid');return false;}if(name==''||name.length<3){validation=false;myalert('Please Enter your Valid Name','Invalid');return false;}if(password==''||password.length<8){validation=false;myalert('Please Enter atleast 8 Character Password','Invalid');return false;}if(validation==true){$.ajax({type:"POST",url:myform.attr('action'),data:myform.serialize(),success:function(response){response=JSON.parse(response);if(response.status=='success'){window.location="https://www.upcharr.com/verifymobile";}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});}});</script>
+	<script>$('#loginform').submit(function(e){e.preventDefault(e);var myform=$(this);$.ajax({type:"POST",url:myform.attr('action'),data:myform.serialize(),success:function(response){response=JSON.parse(response);if(response.status=='success'){window.location="https://www.upcharr.com/";}else if(response.status=='otp'){window.location="https://www.upcharr.com/verifymobile";}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});});</script>
+	<script>$('#forgotform').submit(function(e){e.preventDefault(e);var myform=$(this);$.ajax({type:"POST",url:myform.attr('action'),data:myform.serialize(),success:function(response){response=JSON.parse(response);if(response.status=='success'){$('#forgotform').hide();$('#forgototpform').show();}else{myalert('opps'+response.msg);}console.log(response);}});});</script>
+	<script>$('#signupotpform').submit(function(e){e.preventDefault(e);var myform=$(this);$.ajax({type:"POST",url:myform.attr('action'),data:myform.serialize(),success:function(response){response=JSON.parse(response);if(response.status=='success'){window.location="https://www.upcharr.com/";}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});});$('.resendotp').click(function(e){e.preventDefault(e);$.ajax({type:"POST",url:'https://www.upcharr.com/user/resendsignupotp',success:function(response){response=JSON.parse(response);if(response.status=='success'){myalert(response.msg);}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});});$('.resendfotp').click(function(e){e.preventDefault(e);$.ajax({type:"POST",url:'https://www.upcharr.com/user/resendforgetotp',success:function(response){response=JSON.parse(response);if(response.status=='success'){myalert(response.msg);}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});});$('#forgototpform').submit(function(e){e.preventDefault(e);var myform=$(this);$.ajax({type:"POST",url:myform.attr('action'),data:myform.serialize(),success:function(response){response=JSON.parse(response);if(response.status=='success'){$('#forgototpform').hide();$('#forgotnewpassform').show();}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});});$('#forgotnewpassform').submit(function(e){e.preventDefault(e);var myform=$(this);$.ajax({type:"POST",url:myform.attr('action'),data:myform.serialize(),success:function(response){response=JSON.parse(response);if(response.status=='success'){window.location="https://www.upcharr.com/login";}else if(response.status=='failed'){myalert(response.msg);}else{myalert('opps'+response.msg);}console.log(response);}});});$('body').on('click','.getappointment',function(e){e.preventDefault(e);$('#app_conf_pop_doctor').html('');$('#app_conf_pop_date').html('');$('#app_conf_pop_time').html('');$('#app_conf_pop_institute').html('');var did=$(this).attr('data-upchar-did');$('#app_conf_pop_doctorid').val(did);$.ajax({type:"POST",url:"https://www.upcharr.com/home/app_conf_pop_doctor?doctor="+did,success:function(data){$('#app_conf_pop_doctor').html(data);}});$.ajax({type:"POST",url:"https://www.upcharr.com/home/app_conf_pop_date?doctor="+did,success:function(data){$('#app_conf_pop_date').html(data);}});});$('body').on('change','#app_conf_pop_date',function(e){$('#app_conf_pop_institute').html('');var date=$(this).val();var did=$('#app_conf_pop_doctorid').val();$.ajax({type:"POST",url:"https://www.upcharr.com/home/app_conf_pop_time?doctor="+did+"&date="+date,success:function(data){$('#app_conf_pop_time').html(data);}});});$('body').on('change','#app_conf_pop_time',function(e){var date=$('#app_conf_pop_date').val();var did=$('#app_conf_pop_doctorid').val();var time=$('#app_conf_pop_time').val();$.ajax({type:"POST",url:"https://www.upcharr.com/home/app_conf_pop_institute?doctor="+did+"&date="+date+"&time="+time,success:function(data){$('#app_conf_pop_institute').html(data);}});});$('body').on('click','#app_conf_otp_submit',function(e){var date=$('#app_conf_pop_date').val();var did=$('#app_conf_pop_doctorid').val();var time=$('#app_conf_pop_time').val();var mobile=$('#app_conf_mobile').val();var name=$('#app_conf_name').val();if(name==''||mobile==''||mobile.length<10||mobile.length>10||time==''){myalert('Please Fill the Form with Valid Details');}else{$.ajax({type:"POST",url:"https://www.upcharr.com/home/app_conf_pop_otpgen",data:'mobile='+mobile,success:function(data){}});$('#app_conf_otp').show();$('#app_conf_otp_submit').hide();$('#app_conf_submit').show();}});$('body').on('submit','#app_conf_form',function(e){e.preventDefault(e);var myform=$(this);$.ajax({url:myform.attr('action'),data:myform.serialize(),type:"POST",success:function(data){if(data=='OK'){window.location="https://www.upcharr.com/paysecure/acheckout";}else if(data=='Not Available'){$('#myModal').modal('hide');myalert('Not available','Not Available');}else
+myalert('Failed');}});});</script>
+ <!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"/>
+  <script type="text/javascript">$(function(){$("#hint").autocomplete({minLength:1,source:function(request,response){$.ajax({url:"https://www.upcharr.com/gethint",dataType:"json",data:{q:request.term},success:function(data){response(data);}});}});$("#hintcity").autocomplete({minLength:1,source:function(request,response){$.ajax({url:"https://www.upcharr.com/gethintcity",dataType:"json",data:{q:request.term},success:function(data){response($.map(data,function(item){return{label:item.label,value:item.value}}));}});},select:function(event,b){event.preventDefault();$(this).val(b.item.label);$('#city').val(b.item.value);}});});function isEmail(email){var regex=/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;return regex.test(email);}</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script><script>function myalert(content='',title='Alert!'){$.alert({title:title,content:content,});}</script>
+  </body>
+
+</html>
+
+
+
+
+<script>$(document).ready(function(){$(".SerchArrow").click(function(){$(".SearchBox").slideToggle("slow");});});</script>
+
+
+<script type="text/javascript">$(document).ready(function(){$('.customer-logos').slick({slidesToShow:6,slidesToScroll:1,autoplay:true,autoplaySpeed:1500,arrows:false,dots:false,pauseOnHover:false,responsive:[{breakpoint:768,settings:{slidesToShow:4}},{breakpoint:520,settings:{slidesToShow:3}}]});});</script>
+
+<script>$(window).scroll(function(){var sPos=$(this).scrollTop();$(".bannertext, .bannerbox").css({'right':sPos/1+'px',});});</script> 
+
+
+
+<script>var myIndex=0;carousel();function carousel(){var i;var x=document.getElementsByClassName("mySlides");for(i=0;i<x.length;i++){x[i].style.display="none";}myIndex++;if(myIndex>x.length){myIndex=1}x[myIndex-1].style.display="block";setTimeout(carousel,1400);}</script>
+<script>var myIndex=0;carousel1();function carousel1(){var i;var x=document.getElementsByClassName("mySlides1");for(i=0;i<x.length;i++){x[i].style.display="none";}myIndex++;if(myIndex>x.length){myIndex=1}x[myIndex-1].style.display="block";setTimeout(carousel,1150);}</script>
+
+<script>var myIndex=0;carousel2();function carousel2(){var t;var x=document.getElementsByClassName("mySlides2");for(t=0;t<x.length;t++){x[t].style.display="none";}myIndex++;if(myIndex>x.length){myIndex=1}x[myIndex-1].style.display="block";setTimeout(carousel2,1200);}</script>
+
+<script>var myIndex=0;carousel3();function carousel3(){var j;var x=document.getElementsByClassName("mySlides3");for(j=0;j<x.length;j++){x[j].style.display="none";}myIndex++;if(myIndex>x.length){myIndex=1}x[myIndex-1].style.display="block";setTimeout(carousel3,1100);}</script>
+
+<script>var myIndex=0;carousel4();function carousel4(){var k;var x=document.getElementsByClassName("mySlides4");for(k=0;k<x.length;k++){x[k].style.display="none";}myIndex++;if(myIndex>x.length){myIndex=1}x[myIndex-1].style.display="block";setTimeout(carousel4,1400);}</script>
+
+<script>var text=document.getElementById('text');var newDom='';var animationDelay=6;for(let i=0;i<text.innerText.length;i++){newDom+='<span class="char">'+(text.innerText[i]==' '?'&nbsp;':text.innerText[i])+'</span>';}text.innerHTML=newDom;var length=text.children.length;for(let i=0;i<length;i++){text.children[i].style['animation-delay']=animationDelay*i+'ms';}</script>
+
+ 
+    

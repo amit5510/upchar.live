@@ -1,0 +1,20 @@
+ <div class="sidebar">
+
+            
+			<div class="logopanel"> 		
+          <A href="index.php"><img src="http://localhost/swati/images/logo.png"/></a>
+       
+            </div>
+            <div class="sidebar-inner">
+          <ul class="nav nav-sidebar">
+            <li class="nav-active active"><a href="index.php"><i class="icon-home"></i><span>Dashboard</span></a></li>
+
+			          <li ><a href="#"><i class="icon-bulb"></i><span>User Detail</span> </a></li>
+            <li ><a href="#"><i class="icon-bulb"></i><span>Medicine Pathology</span> </a></li>
+			 <li ><a href="#"><i class="icon-puzzle"></i><span>Doctor History</span> </a> </li>
+            <li ><a href="#"><i class="icon-bulb"></i><span>Hospital History</span> </a></li>
+			<li ><a href="milestone.php"><i class="icon-bulb"></i><span>Profiles</span> </a></li>
+           
+          </ul>
+        </div>
+        </div>

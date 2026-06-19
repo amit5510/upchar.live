@@ -1,0 +1,10 @@
+@media only screen and (max-width: 500px) {
+  .border2 {
+    border-bottom: 1px solid #d6d6d6;
+    width: 111%;
+    z-index: 2;
+    position: relative;
+    margin-top: 25%;
+    margin-left: -15px;
+}
+}

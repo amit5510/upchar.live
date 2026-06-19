@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .label-name{
+    text-align:left!important;
+    margin-top:-5px;
+  }
+  .starspan
+  {
+    color:#e80909;
+    font-size:18px;
+  }
+  .mainheadlinerow
+  {
+    padding:5px;margin-top:10px;margin-bottom:10px;
+  }
+  .mainheadline
+  {
+    background:#3c8dbc;margin-top:10px;margin-bottom:10px;color:#fff;padding:9px;font-weight:600;
+  }
+  .mainheadlinefirstrow
+  {
+    padding:5px;
+  }
+  .mainheadlinefirst
+  {
+    background:#3c8dbc;margin-top:-15px;margin-bottom:15px;color:#fff;padding:9px;font-weight:600;
+  }
+  .othernote{
+      font-weight:600;font-size:13px;color:#d20c0c;
+  }
+  .mainhead{font-weight:600;margin-bottom:20px;}
+  .formbody{border:1px solid #d6d2d2;padding:10px;border-radius:4px;}
+  .note{font-weight:600;margin-top:10px;margin-bottom:20px;}
+  
+  #reset{background:#fff;color:#000;padding: 6px 30px;}
+  </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+		<div class="content-wrapper">
+			<section class="content-header">
+				<h1>
+					Dashboard
+					<small>Control panel</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li><a href="<?php echo base_url();?>masters/dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li class="active">Dashboard</li>
+				</ol>
+			</section>
+			<section class="content">
+				<?php  /* ?>
+				<!-- Small boxes (Stat box) -->
+				<div class="row">
+					<div class="col-lg-3 col-xs-6">
+						<!-- small box -->
+						<div class="small-box bg-aqua">
+							<div class="inner">
+								<h3><?=@$center;?></h3>
+								<p>Total Center</p>
+							</div>
+							<div class="icon">
+							  <i class="fa fa-snowflake-o"></i>
+							</div>
+							<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+					  <!-- small box -->
+					  <div class="small-box bg-green">
+						<div class="inner">
+						  <h3><?=@$subcenter;?></h3>
+
+						  <p>Total Sub Center</p>
+						</div>
+						<div class="icon">
+						  <i class="fa fa-building-o"></i>
+						</div>
+						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+					  </div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+					  <!-- small box -->
+					  <div class="small-box bg-red">
+						<div class="inner">
+						  <h3><?=@$faculty;?></h3>
+
+						  <p>Total Faculty</p>
+						</div>
+						<div class="icon">
+						  <i class="fa fa-users"></i>
+						</div>
+						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+					  </div>
+					</div>
+					<!-- ./col -->
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+					  <!-- small box -->
+					  <div class="small-box bg-yellow">
+						<div class="inner">
+						  <h3><?=@$trainee;?></h3>
+
+						  <p>Total Regd. Trainee</p>
+						</div>
+						<div class="icon">
+						  <i class="ion ion-person-add"></i>
+						</div>
+						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+					  </div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+					  <!-- small box -->
+					  <div class="small-box bg-yellow">
+						<div class="inner">
+						  <h3><?=@$enrolled;?></h3>
+
+						  <p>Total Enrolled Trainee</p>
+						</div>
+						<div class="icon">
+						  <i class="fa fa-file-text"></i>
+						</div>
+						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+					  </div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+					  <!-- small box -->
+					  <div class="small-box bg-aqua">
+						<div class="inner">
+						  <h3><?=@$trained;?></h3>
+
+						  <p>Total Trained Trainee</p>
+						</div>
+						<div class="icon">
+						  <i class="fa fa-graduation-cap"></i>
+						</div>
+						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+					  </div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+					  <!-- small box -->
+					  <div class="small-box bg-green">
+						<div class="inner">
+						  <h3><?=@$placed;?></h3>
+
+						  <p>Total Placed Trainee</p>
+						</div>
+						<div class="icon">
+						  <i class="fa fa-industry"></i>
+						</div>
+						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+					  </div>
+					</div>
+				</div>
+				<!-- /.row -->
+				<!-- Main row -->
+				<div class="row">
+					<!--Will be image here -->
+					<div class="col-md-12">
+						<img src="https://www.fddiindia.com/upload/banners/resize/21173252035a8e981a713bc4.22429220_noida.jpg" class="img-responsive">
+					</div>
+				</div>
+				<?php   */ ?>
+				
+			</section>
+		</div>
+	</div>
+</body>
+<?=$this->load->view('inc/footer');?>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+     
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                <p>New phone +1(800)555-1234</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                <p>nora@example.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                <p>Execution time 5 seconds</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="label label-danger pull-right">70%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Update Resume
+                <span class="label label-success pull-right">95%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Laravel Integration
+                <span class="label label-warning pull-right">50%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Back End Framework
+                <span class="label label-primary pull-right">68%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Allow mail redirect
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Other sets of options are available
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Expose author name in posts
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Allow the user to show his name in blog posts
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Show me as online
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Turn off notifications
+              <input type="checkbox" class="pull-right">
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Delete chat history
+              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+            </label>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+
+</body>
+</html>
