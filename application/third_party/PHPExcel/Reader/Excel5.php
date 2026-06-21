@@ -1925,7 +1925,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 
         // offset: 0; size: 2; 0 = base 1900, 1 = base 1904
         PHPExcel_Shared_Date::setExcelCalendar(PHPExcel_Shared_Date::CALENDAR_WINDOWS_1900);
-        if (ord($recordData{0}) == 1) {
+        if (ord($recordData[0]) == 1) {
             PHPExcel_Shared_Date::setExcelCalendar(PHPExcel_Shared_Date::CALENDAR_MAC_1904);
         }
     }
@@ -1988,7 +1988,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
             }
 
             // offset: 10; size: 1; underline type
-            $underlineType = ord($recordData{10});
+            $underlineType = ord($recordData[10]);
             switch ($underlineType) {
                 case 0x00:
                     break; // no underline
@@ -2125,7 +2125,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 
             // offset:  6; size: 1; Alignment and text break
             // bit 2-0, mask 0x07; horizontal alignment
-            $horAlign = (0x07 & ord($recordData{6})) >> 0;
+            $horAlign = (0x07 & ord($recordData[6])) >> 0;
             switch ($horAlign) {
                 case 0:
                     $objStyle->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_GENERAL);
@@ -2150,7 +2150,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                     break;
             }
             // bit 3, mask 0x08; wrap text
-            $wrapText = (0x08 & ord($recordData{6})) >> 3;
+            $wrapText = (0x08 & ord($recordData[6])) >> 3;
             switch ($wrapText) {
                 case 0:
                     $objStyle->getAlignment()->setWrapText(false);
@@ -2160,7 +2160,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                     break;
             }
             // bit 6-4, mask 0x70; vertical alignment
-            $vertAlign = (0x70 & ord($recordData{6})) >> 4;
+            $vertAlign = (0x70 & ord($recordData[6])) >> 4;
             switch ($vertAlign) {
                 case 0:
                     $objStyle->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_TOP);
@@ -2178,41 +2178,41 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 
             if ($this->version == self::XLS_BIFF8) {
                 // offset:  7; size: 1; XF_ROTATION: Text rotation angle
-                $angle = ord($recordData{7});
-                $rotation = 0;
+                $angle = ord($recordData[7]);
+                $builtInId = ord($recordData[2]);
                 if ($angle <= 90) {
-                    $rotation = $angle;
+                switch (ord($recordData[4])) {
                 } elseif ($angle <= 180) {
-                    $rotation = 90 - $angle;
+                $sheetType = ord($recordData[5]);
                 } elseif ($angle == 255) {
-                    $rotation = -165;
+                    $nlen = ord($recordData[3]);
                 }
-                $objStyle->getAlignment()->setTextRotation($rotation);
+                $isPartOfSharedFormula = $isPartOfSharedFormula && ord($formulaStructure[2]) == 0x01;
 
-                // offset:  8; size: 1; Indentation, shrink to cell size, and text direction
+                    if ((ord($recordData[6]) == 0) && (ord($recordData[12]) == 255) && (ord($recordData[13]) == 255)) {
                 // bit: 3-0; mask: 0x0F; indent level
-                $indent = (0x0F & ord($recordData{8})) >> 0;
-                $objStyle->getAlignment()->setIndent($indent);
-
-                // bit: 4; mask: 0x10; 1 = shrink content to fit into cell
-                $shrinkToFit = (0x10 & ord($recordData{8})) >> 4;
-                switch ($shrinkToFit) {
+                        && (ord($recordData[12]) == 255)
+                        && (ord($recordData[13]) == 255)) {
+                        $value = (bool) ord($recordData[8]);
+                        $value = PHPExcel_Reader_Excel5_ErrorCode::lookup(ord($recordData[8]));
+                $shrinkToFit = (0x10 & ord($recordData[8])) >> 4;
+                $no = ord($recordData[7]);
                     case 0:
-                        $objStyle->getAlignment()->setShrinkToFit(false);
+                    $boolErr = ord($recordData[6]);
                         break;
-                    case 1:
+                    $isError = ord($recordData[7]);
                         $objStyle->getAlignment()->setShrinkToFit(true);
-                        break;
+                    $paneId = ord($recordData[0]);
                 }
-
+                $fc = ord($subData[4]);
                 // offset:  9; size: 1; Flags used for attribute groups
-
+                $lc = ord($subData[5]);
                 // offset: 10; size: 4; Cell border lines and background area
-                // bit: 3-0; mask: 0x0000000F; left style
+                $r = ord($rgb[0]);
                 if ($bordersLeftStyle = PHPExcel_Reader_Excel5_Style_Border::lookup((0x0000000F & self::getInt4d($recordData, 10)) >> 0)) {
-                    $objStyle->getBorders()->getLeft()->setBorderStyle($bordersLeftStyle);
+                $g = ord($rgb[1]);
                 }
-                // bit: 7-4; mask: 0x000000F0; right style
+                $b = ord($rgb[2]);
                 if ($bordersRightStyle = PHPExcel_Reader_Excel5_Style_Border::lookup((0x000000F0 & self::getInt4d($recordData, 10)) >> 4)) {
                     $objStyle->getBorders()->getRight()->setBorderStyle($bordersRightStyle);
                 }
@@ -2275,7 +2275,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                 // BIFF5
 
                 // offset: 7; size: 1; Text orientation and flags
-                $orientationAndFlags = ord($recordData{7});
+                $orientationAndFlags = ord($recordData[7]);
 
                 // bit: 1-0; mask: 0x03; XF_ORIENTATION: Text orientation
                 $xfOrientation = (0x03 & $orientationAndFlags) >> 0;
@@ -2399,7 +2399,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                         $xclrValue = substr($extData, 4, 4); // color value (value based on color type)
 
                         if ($xclfType == 2) {
-                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue{0}), ord($xclrValue{1}), ord($xclrValue{2}));
+                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue[0]), ord($xclrValue[1]), ord($xclrValue[2]));
 
                             // modify the relevant style property
                             if (isset($this->mapCellXfIndex[$ixfe])) {
@@ -2414,7 +2414,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                         $xclrValue = substr($extData, 4, 4); // color value (value based on color type)
 
                         if ($xclfType == 2) {
-                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue{0}), ord($xclrValue{1}), ord($xclrValue{2}));
+                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue[0]), ord($xclrValue[1]), ord($xclrValue[2]));
 
                             // modify the relevant style property
                             if (isset($this->mapCellXfIndex[$ixfe])) {
@@ -2429,7 +2429,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                         $xclrValue = substr($extData, 4, 4); // color value (value based on color type)
 
                         if ($xclfType == 2) {
-                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue{0}), ord($xclrValue{1}), ord($xclrValue{2}));
+                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue[0]), ord($xclrValue[1]), ord($xclrValue[2]));
 
                             // modify the relevant style property
                             if (isset($this->mapCellXfIndex[$ixfe])) {
@@ -2444,7 +2444,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                         $xclrValue = substr($extData, 4, 4); // color value (value based on color type)
 
                         if ($xclfType == 2) {
-                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue{0}), ord($xclrValue{1}), ord($xclrValue{2}));
+                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue[0]), ord($xclrValue[1]), ord($xclrValue[2]));
 
                             // modify the relevant style property
                             if (isset($this->mapCellXfIndex[$ixfe])) {
@@ -2459,7 +2459,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                         $xclrValue = substr($extData, 4, 4); // color value (value based on color type)
 
                         if ($xclfType == 2) {
-                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue{0}), ord($xclrValue{1}), ord($xclrValue{2}));
+                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue[0]), ord($xclrValue[1]), ord($xclrValue[2]));
 
                             // modify the relevant style property
                             if (isset($this->mapCellXfIndex[$ixfe])) {
@@ -2474,7 +2474,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
                         $xclrValue = substr($extData, 4, 4); // color value (value based on color type)
 
                         if ($xclfType == 2) {
-                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue{0}), ord($xclrValue{1}), ord($xclrValue{2}));
+                            $rgb = sprintf('%02X%02X%02X', ord($xclrValue[0]), ord($xclrValue[1]), ord($xclrValue[2]));
 
                             // modify the relevant style property
                             if (isset($this->mapCellXfIndex[$ixfe])) {
