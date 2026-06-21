@@ -1,0 +1,46 @@
+name: PHP CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    name: PHP Lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [ '8.1', '8.2', '8.3' ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, intl, xml, curl, zip, json
+
+      - name: Show PHP version
+        run: php -v
+
+      - name: Detect composer.json
+        id: check_composer
+        run: |
+          if [ -f composer.json ]; then echo "has_composer=true" >> $GITHUB_OUTPUT; else echo "has_composer=false" >> $GITHUB_OUTPUT; fi
+
+      - name: Install Composer dependencies
+        if: steps.check_composer.outputs.has_composer == 'true'
+        run: |
+          composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Run PHP lint (all tracked PHP files)
+        run: |
+          echo "Running php -l on tracked PHP files (excluding vendor)"
+          git ls-files '*.php' ':!:vendor/**' | xargs -r -n1 -P4 php -l
+
+      - name: Check for basic issues (optional)
+        run: |
+          echo "No automated tests detected. Add PHPUnit or other tests to run here." 
