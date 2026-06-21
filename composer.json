@@ -1,0 +1,9 @@
+{
+  "name": "amit5510/upchar.live",
+  "description": "Upchar.live - A CodeIgniter application",
+  "type": "project",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "minimum-stability": "stable"
+}
