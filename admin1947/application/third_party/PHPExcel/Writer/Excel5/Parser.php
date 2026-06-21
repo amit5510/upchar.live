@@ -1020,7 +1020,7 @@ class PHPExcel_Writer_Excel5_Parser
         $col  = 0;
         $col_ref_length = strlen($col_ref);
         for ($i = 0; $i < $col_ref_length; ++$i) {
-            $col += (ord($col_ref{$i}) - 64) * pow(26, $expn);
+            $col += (ord($col_ref[$i]) - 64) * pow(26, $expn);
             --$expn;
         }
 
