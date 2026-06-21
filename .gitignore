@@ -1,0 +1,30 @@
+# Composer
+/vendor/
+
+# Cache files
+application/cache/*
+!application/cache/.htaccess
+
+# User-generated content
+application/logs/*
+!application/logs/.htaccess
+
+# OS/IDE
+.DS_Store
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+
+# Node modules (if used)
+node_modules/
+npm-debug.log
+
+# Third-party libraries that shouldn't be tracked
+# But keep composer.json and composer.lock
+# /vendor/  (uncomment if you want to ignore vendor after installing)
+
+# Session files (except cache itself)
+application/cache/sessions/*
+!application/cache/sessions/.htaccess
