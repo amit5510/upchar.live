@@ -1042,21 +1042,21 @@ class PHPExcel_Writer_Excel5_Parser
         $formula_length = strlen($this->formula);
         // eat up white spaces
         if ($i < $formula_length) {
-            while ($this->formula{$i} == " ") {
+            while ($this->formula[$i] == " ") {
                 ++$i;
             }
 
             if ($i < ($formula_length - 1)) {
-                $this->lookAhead = $this->formula{$i+1};
+                $this->lookAhead = $this->formula[$i+1];
             }
             $token = '';
         }
 
         while ($i < $formula_length) {
-            $token .= $this->formula{$i};
+            $token .= $this->formula[$i];
 
             if ($i < ($formula_length - 1)) {
-                $this->lookAhead = $this->formula{$i+1};
+                $this->lookAhead = $this->formula[$i+1];
             } else {
                 $this->lookAhead = '';
             }
@@ -1071,7 +1071,7 @@ class PHPExcel_Writer_Excel5_Parser
             }
 
             if ($i < ($formula_length - 2)) {
-                $this->lookAhead = $this->formula{$i+2};
+                $this->lookAhead = $this->formula[$i+2];
             } else { // if we run out of characters lookAhead becomes empty
                 $this->lookAhead = '';
             }
